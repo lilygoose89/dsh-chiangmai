@@ -1,0 +1,52 @@
+---
+---
+
+/* Check the README file for information on how to edit */
+/* Edit your CSS resets in the resets.css file located in the _includes folder */
+
+
+:root {
+  --primary-color                   : {{site.data.settings.colors.primary_color}};
+  --primary-shade                   : {{site.data.settings.colors.primary_shade_color}};
+  --secondary-color                 : {{site.data.settings.colors.secondary_color}};
+  --secondary-shade                 : {{site.data.settings.colors.secondary_shade_color}};
+  --accent-color                    : {{site.data.settings.colors.accent_color}};
+  --body-font-family                : {{site.data.settings.fonts.body_font_family}};
+  --heading-font-family              : {{site.data.settings.fonts.design_font_family}};
+  --heading-default-bottom-margin    : 2rem;
+}
+
+{% include css/resets.css %}
+{% include css/utility.css %}
+
+
+h1,
+h2,
+h3 {
+  font-family     : var(--heading-font-family);
+  margin-bottom   : var(--heading-default-bottom-margin);
+  letter-spacing  : 2px;
+}
+
+h1 {
+  color           : var(--accent-color);
+  font-size       : 4rem;
+  text-transform  : uppercase;
+}
+
+h2 {
+  color         : var(--secondary-color);
+  font-size     : 2.5rem;
+}
+
+h3 {
+  color         : var(--secondary-shade);
+  font-size     : 2rem;
+}
+
+
+p {
+  font-family    : var(--body-font-family);
+  font-size      : 1.5rem;
+  line-height    : 1.5;
+}
