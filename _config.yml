@@ -1,24 +1,43 @@
-site: Site Name
+url: 'https://mysite.com/'
 
-url: "https://mysite.com" # the base hostname & protocol for your site
+# Enable CloudCannon UI
+cloudcannon:
+  data: true
 
+# Configuration of the compress_html layout
+compress_html:
+  comments: all # Removes all comments; remove this line to enable comments in production site
+
+# Collections configurations
 collections:
-  posts:
+  pages:
     output: true
-    permalink: /:collection/:name
+    permalink: /:title
 
+# Plugins installed
 plugins:
-  - jekyll-seo-tag
   - jekyll-sitemap
 
-# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
-logo: /siteicon.png
-description: 
-author:
-  name:
-  email:
-  twitter:
-social:
-  name:
-  links:
-    - rootdomain.com
+# Configuration of the jekyll-responsive-image plugin
+# responsive_image:
+#   template: _includes/templates/image-tag-lazy.html
+#   sizes:
+#     - width: 360
+#     - width: 480
+#     - width: 600
+#     - width: 800
+#     - width: 1400
+#   base_path: assets/images
+#   output_path_format: assets/images/srcset/%{width}/%{basename}
+
+# Configuration for the WebP Generator Plugin
+# webp:
+#   enabled: true
+#   quality: 75
+#   img_dir: ["/assets/images/"]
+#   nested: true
+
+# Sass partials directory
+# sass:
+#   sass_dir: _sass
+#   style: compressed
