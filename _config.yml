@@ -1,32 +1,24 @@
-cloudcannon:
-  data: true
+site: Site Name
+
+url: "https://mysite.com" # the base hostname & protocol for your site
+
+collections:
+  posts:
+    output: true
+    permalink: /:collection/:name
+
 plugins:
+  - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-responsive-image
-  - jekyll-archives
-  - jekyll-webp
 
-# Configuration of the jekyll-responsive-image plugin
-responsive_image:
-  template: _includes/templates/image-tag.html
-  sizes:
-    - width: 360
-    - width: 480
-    - width: 600
-    - width: 800
-    - width: 1400
-  base_path: assets/images
-  output_path_format: assets/images/srcset/%{width}/%{basename}
-
-
-# Site configuration for the WebP Generator Plugin
-webp:
-  enabled: true
-  quality: 75
-  img_dir: ["/assets/images/"]
-  nested: true
-
-# Configuration of the compress_html layout
-compress_html:
-  comments: all # Removes all comments; remove this line to enable comments in production site
+# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
+logo: /siteicon.png
+description: 
+author:
+  name:
+  email:
+  twitter:
+social:
+  name:
+  links:
+    - rootdomain.com

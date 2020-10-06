@@ -1,0 +1,258 @@
+@font-face {
+  font-family: AlternateGothicRegular;
+  src: url(/fonts/AlternateGothicRegular.otf);
+}
+@font-face {
+  font-family: ProximaNovaRegular;
+  src: url(/fonts/ProximaNovaRegular.otf);
+}
+@font-face {
+  font-family: ProximaNovaLight;
+  src: url(/fonts/ProximaNovaLight.otf);
+}
+@font-face {
+  font-family: P22UndergroundRegular;
+  src: url(/fonts/P22UndergroundRegular.ttf);
+}
+
+/* universal styles ----------------------------------------- */
+* {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* layout ----------------------------------------- */
+/* add because gridlex "bumps" the page layout beyond 100vw and causes "wiggle" in mobile */
+[class*=grid-],[class*=grid_],[class~=grid] {
+  margin: 0;
+  padding: 0;
+}
+
+@media all and (max-width:1024px) {
+
+}
+@media all and (max-width:768px) {
+
+}
+@media all and (max-width:576px) {
+
+}
+
+/* typography ----------------------------------------- */
+h1 {
+  font-family: AlternateGothicRegular,sans-serif;
+}
+h3 {
+  font-family: ProximaNovaRegular,sans-serif;
+}
+p {
+  font-family: P22UndergroundRegular,sans-serif;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+@media all and (max-width:768px) {
+  .text-center-mobile {
+  text-align: center;
+  }
+}
+/* link and button styles ----------------------------------------- */
+
+/* container styles ----------------------------------------- */
+
+/* header and nav styles ----------------------------------------- */
+
+/*  MOBILE MENU */
+#mobile-menu {
+  background-color: white;
+  font-size: 1.6em;
+  text-align: center;
+  text-transform: uppercase;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 99999;
+}
+#mobile-menu a {
+  color: black;
+}
+#mobile-menu.mobile-menu-visible {
+  display: block;
+}
+/* Scroll to top */
+.scroll-to-top-container {
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+}
+.scroll-to-top-icon {
+  font-size: 2em;
+  color: rgba(47, 50, 58, 0.2);
+}
+.scroll-to-top-icon:hover {
+  color: rgba(47, 50, 58, 0.9);
+  animation: wobbleud 1s linear infinite;
+  -webkit-font-smoothing: antialiased;
+}
+/* footer styles ----------------------------------------- */
+
+/* homepage styles ----------------------------------------- */
+
+/* post styles ----------------------------------------- */
+
+/* form styles ----------------------------------------- */
+
+/* helpers ----------------------------------------- */
+@media all and (max-width:768px) {
+  .text-center-mobile {
+  text-align: center;
+  }
+  .hide-tablet {
+    display: none;
+  }
+}
+@media all and (max-width:576px) {
+  .hide-mobile {
+    display: none;
+  }
+}
+/* PADDING/MARGINS */
+.container-center {
+  margin: 0 auto !important;
+}
+.pad-all-xs {
+  padding: 1% !important;
+}
+.pad-all-s {
+  padding: 5% !important;
+}
+.pad-all-m {
+  padding: 10% !important;
+}
+.pad-all-l {
+  padding: 20% !important;
+}
+.pad-top-xs {
+  padding-top: 1% !important;
+}
+.pad-top-s {
+  padding-top: 5% !important;
+}
+.pad-top-m {
+  padding-top: 10% !important;
+}
+.pad-top-l {
+  padding-top: 20% !important;
+}
+.pad-right-xs {
+  padding-right: 1% !important;
+}
+.pad-right-s {
+  padding-right: 5% !important;
+}
+.pad-right-m {
+  padding-right: 10% !important;
+}
+.pad-right-l {
+  padding-right: 20% !important;
+}
+.pad-bottom-xs {
+  padding-bottom: 1% !important;
+}
+.pad-bottom-s {
+  padding-bottom: 5% !important;
+}
+.pad-bottom-m {
+  padding-bottom: 10% !important;
+}
+.pad-bottom-l {
+  padding-bottom: 20% !important;
+}
+.pad-left-xs {
+  padding-left: 1% !important;
+}
+.pad-left-s {
+  padding-left: 5% !important;
+}
+.pad-left-m {
+  padding-left: 10% !important;
+}
+.pad-left-l {
+  padding-left: 20% !important;
+}
+.margin-all-xs {
+  margin: 1% !important;
+}
+.margin-all-s {
+  margin: 5% !important;
+}
+.margin-all-m {
+  margin: 10% !important;
+}
+.margin-all-l {
+  margin: 20% !important;
+}
+.margin-top-xs {
+  margin-top: 1% !important;
+}
+.margin-top-s {
+  margin-top: 5% !important;
+}
+.margin-top-m {
+  margin-top: 10% !important;
+}
+.margin-top-l {
+  margin-top: 20% !important;
+}
+.margin-right-xs {
+  margin-right: 1% !important;
+}
+.margin-right-s {
+  margin-right: 5% !important;
+}
+.margin-right-m {
+  margin-right: 10% !important;
+}
+.margin-right-l {
+  margin-right: 20% !important;
+}
+.margin-bottom-xs {
+  margin-bottom: 1% !important;
+}
+.margin-bottom-s {
+  margin-bottom: 5% !important;
+}
+.margin-bottom-m {
+  margin-bottom: 10% !important;
+}
+.margin-bottom-l {
+  margin-bottom: 20% !important;
+}
+.margin-left-xs {
+  margin-left: 1% !important;
+}
+.margin-left-s {
+  margin-left: 5% !important;
+}
+.margin-left-m {
+  margin-left: 10% !important;
+}
+.margin-left-l {
+  margin-left: 20% !important;
+}
+/* POSITION */
+.position-rel {
+  position: relative;
+}
+.position-abs {
+  position: absolute;
+}

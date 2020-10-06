@@ -1,14 +1,10 @@
----
-layout: compress
----
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   {% include head.html %}
-  <body class="bg-primary">
-    {% include header.html %}
-
+  {% include ga.html %}
+  <body>
+    {% include nav.html %}
     {{content}}
-
     {% include footer.html %}
     {% include scripts.html %}
   </body>
