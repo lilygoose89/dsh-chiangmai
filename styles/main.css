@@ -6,8 +6,8 @@
 /* CSS variables */
 
 :root {
-    --primary-color                   : {{site.data.settings.colors.primary_color}};
-    --primary-shade                   : {{site.data.settings.colors.primary_shade_color}};
+    --primary-color                    : {{site.data.settings.colors.primary_color}};
+    --primary-highlight               : {{site.data.settings.colors.highlight-color}};
     --secondary-color                 : {{site.data.settings.colors.secondary_color}};
     --secondary-shade                 : {{site.data.settings.colors.secondary_shade_color}};
     --accent-color                    : {{site.data.settings.colors.accent_color}};
@@ -41,7 +41,7 @@ html {
 }
 
 body {
-  background-color  : var(--primary-color);
+  background-color  : #fafafc;
 }
 
 header {
@@ -58,7 +58,7 @@ h1,
 h2,
 h3 {
   font-family     : var(--heading-font-family);
-  margin-bottom   : var(--heading-default-bottom-margin);
+  /* margin-bottom   : var(--heading-default-bottom-margin); */
 }
 
 h1 {
@@ -122,7 +122,7 @@ h4,
 p,
 ol,
 ul {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 input,
@@ -149,10 +149,28 @@ input {
   margin-bottom: 1rem;
 }
 
+.text-white {
+  color: white;
+}
+.text-highlight {
+  color: var(--primary-highlight );
+}
+.text-accent {
+  color: var(--accent-color);
+}
+
 /* Utility Classes */
 
 header {
   padding: 1% 8% ;
+}
+
+.hero {
+  height: 100vh;
+}
+
+.logo-container-hero {
+  height: 30vh;
 }
 
 .padding-lg {
@@ -256,6 +274,14 @@ header {
 
 /* Backgrounds */
 
+.bg-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  overflow-y: hidden;
+  position: relative;
+}
+
 .bg-primary {
   color            : var(--primary-color);
   background-color : var(--primary-shade);
@@ -281,6 +307,170 @@ header {
 .bg-accent span {
   color            : #fff;
 
+}
+
+.bg-contact-form {
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  overflow-y: hidden;
+  position: relative;
+}
+
+
+
+/* helpers ----------------------------------------- */
+
+@media all and (max-width:768px) {
+  .text-center-mobile {
+  text-align: center;
+  }
+  .hide-tablet {
+    display: none;
+  }
+}
+@media all and (max-width:576px) {
+  .hide-mobile {
+    display: none;
+  }
+}
+/* PADDING/MARGINS */
+.container-center {
+  margin: 0 auto !important;
+}
+.pad-0 {
+  padding: 0 !important;
+}
+.pad-all-xs {
+  padding: 1% !important;
+}
+.pad-all-s {
+  padding: 5% !important;
+}
+.pad-all-m {
+  padding: 10% !important;
+}
+.pad-all-l {
+  padding: 20% !important;
+}
+.pad-top-xs {
+  padding-top: 1% !important;
+}
+.pad-top-s {
+  padding-top: 5% !important;
+}
+.pad-top-m {
+  padding-top: 10% !important;
+}
+.pad-top-l {
+  padding-top: 20% !important;
+}
+.pad-right-xs {
+  padding-right: 1% !important;
+}
+.pad-right-s {
+  padding-right: 5% !important;
+}
+.pad-right-m {
+  padding-right: 10% !important;
+}
+.pad-right-l {
+  padding-right: 20% !important;
+}
+.pad-bottom-xs {
+  padding-bottom: 1% !important;
+}
+.pad-bottom-s {
+  padding-bottom: 5% !important;
+}
+.pad-bottom-m {
+  padding-bottom: 10% !important;
+}
+.pad-bottom-l {
+  padding-bottom: 20% !important;
+}
+.pad-left-xs {
+  padding-left: 1% !important;
+}
+.pad-left-s {
+  padding-left: 5% !important;
+}
+.pad-left-m {
+  padding-left: 10% !important;
+}
+.pad-left-l {
+  padding-left: 20% !important;
+}
+.margin-0 {
+  margin: 0 !important;
+}
+.margin-all-xs {
+  margin: 1% !important;
+}
+.margin-all-s {
+  margin: 5% !important;
+}
+.margin-all-m {
+  margin: 10% !important;
+}
+.margin-all-l {
+  margin: 20% !important;
+}
+.margin-top-xs {
+  margin-top: 1% !important;
+}
+.margin-top-s {
+  margin-top: 5% !important;
+}
+.margin-top-m {
+  margin-top: 10% !important;
+}
+.margin-top-l {
+  margin-top: 20% !important;
+}
+.margin-right-xs {
+  margin-right: 1% !important;
+}
+.margin-right-s {
+  margin-right: 5% !important;
+}
+.margin-right-m {
+  margin-right: 10% !important;
+}
+.margin-right-l {
+  margin-right: 20% !important;
+}
+.margin-bottom-xs {
+  margin-bottom: 1% !important;
+}
+.margin-bottom-s {
+  margin-bottom: 5% !important;
+}
+.margin-bottom-m {
+  margin-bottom: 10% !important;
+}
+.margin-bottom-l {
+  margin-bottom: 20% !important;
+}
+.margin-left-xs {
+  margin-left: 1% !important;
+}
+.margin-left-s {
+  margin-left: 5% !important;
+}
+.margin-left-m {
+  margin-left: 10% !important;
+}
+.margin-left-l {
+  margin-left: 20% !important;
+}
+
+/* POSITION */
+.position-rel {
+  position: relative;
+}
+.position-abs {
+  position: absolute;
 }
 
 /* Display */
@@ -311,19 +501,21 @@ header {
   text-transform : uppercase;
   font-family    : var(--heading-font-family);
   color          : var(--primary-color);
-  font-weight    : 600;
   letter-spacing : 2px;
-  background-image: linear-gradient(45deg, orange, red 100%);
-  border-radius   : 30px;
+  background     : transparent;
+  border         : solid 2px white;
+  border-radius  : 30px;
 }
 
 .btn:hover,
 .btn:focus-within {
-  background-image: linear-gradient(45deg, red, orange 100%);
+  background: white;
+  color: rgba(32, 66, 112,0.8);
 }
 
 .submit-btn {
-  background-image : linear-gradient(45deg, orange, red 100%);
+  background     : transparent;
+  border         : solid 2px white;
   text-transform   : uppercase;
   color            : var(--primary-color);
   font-weight      : 600;
@@ -454,6 +646,33 @@ header {
   margin: auto;
 }
 
+/* Hero & Titles */
+
+.title-hero {
+  height: 60vh;
+}
+
+.title-pushup {
+  background-color: #ffcc09;
+  height: 20vh;
+  position: relative;
+  top: -20vh;
+}
+
+.body-pushup {
+  position: relative;
+  top: -20vh;
+  margin-bottom: 20vh;
+}
+
+.page-body {
+  margin: 0 10%;
+  background: white;
+  -webkit-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.35);
+  -moz-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.35);
+  box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.35);
+}
+
 /* CTA section */
 
 .cta-container {
@@ -479,7 +698,6 @@ header {
 #message-form input,
 #message-form button,
 #message-form textarea {
-    border    : none;
     display   : block;
     padding   : 1rem;
     width     : 60%;
@@ -489,6 +707,7 @@ header {
   }
 
  /* Footer */
+
  .footer {
    background-color: var(--secondary-color);
  }
@@ -516,7 +735,12 @@ header {
   color : var(--primary-color);
 }
 
+.footer i {
+  font-size: 1.5rem;
+}
+
 /* Highlights section */
+
 .highlights {
   background-color  : whitesmoke;
 }
@@ -601,7 +825,7 @@ header {
 
 
 .milestone-container::before, {
-  background-color: var(--primary-color);
+  background-color: var(--primary-highlight);
 }
 
 .application .milestone-container::before {
@@ -644,6 +868,7 @@ header {
 }
 
 /* Desktop Navigation Styles */
+
 .nav-logo img {
   width   : 80px;
   height  : auto

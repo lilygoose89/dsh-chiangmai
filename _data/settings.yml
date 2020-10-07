@@ -8,11 +8,11 @@ basics:
   phone_number: "+555 555 5555"
   address: Chiang Mai, Thailand
 social:
-  facebook_url: 'https://facebook.com'
-  instagram_url: 'https://instagram.com'
-  instagram_handle: '@yourhandle'
-  twitter_url: 'https://twitter.com'
-  twitter_handle: '@yourhandle'
+  facebook_url: 'https://www.facebook.com/dshchiangmai'
+  instagram_url: 'https://instagram.com/dshchiangmai'
+  instagram_handle: '@dshchiangmai'
+  twitter_url: 'https://twitter.com/dshchiangmai'
+  twitter_handle: '@dshchiangmai'
   youtube_url: 'https://youtube.com'
   github_url: 'https://github.com'
   linkedin_url: 'https://linkedin.com'
@@ -34,14 +34,15 @@ logos:
 colors:
   primary_color: "#f2f2f2"
   secondary_color: "#555"
-  primary_shade_color: "#ffffff2e"
+  highlight-color: "#ffcc09"
   secondary_shade_color: "#565"
-  accent_color: "#1b4470"
+  accent_color: "#204270"
 
 # Typography (can be customized to accomodate more styles like standard font sizes and line height)
 fonts:
   fonts_code_block:  '<link href="/styles/fonts.css" rel="stylesheet">' # Place between single quotes
-  body_font_family: "'ProximaNovaRegular', sans-serif;"
+  body_font_family: "'ProximaNova', sans-serif;"
+  header_font_family: "'ProximaNova', sans-serif;"
   design_font_family: "'AlternateGothicRegular', sans-serif;"
 
 seo:

@@ -5,6 +5,7 @@
 @font-face {
   font-family: ProximaNovaRegular;
   src: url(/assets/fonts/ProximaNovaRegular.otf);
+  font-weight: normal;
 }
 @font-face {
   font-family: ProximaNovaLight;
