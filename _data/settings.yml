@@ -41,14 +41,16 @@ colors:
 # Typography (can be customized to accomodate more styles like standard font sizes and line height)
 fonts:
   fonts_code_block:  '<link href="/styles/fonts.css" rel="stylesheet">' # Place between single quotes
-  body_font_family: "'ProximaNova', sans-serif;"
-  header_font_family: "'ProximaNova', sans-serif;"
-  design_font_family: "'AlternateGothicRegular', sans-serif;"
+  body_font_family: "'ProximaNovaRegular', sans-serif;"
+  body_alt_font_family: "'P22UndergroundRegular', sans-serif;"
+  header_bold_font_family: "'ProximaNovaBlack', sans-serif;"
+  header_font_family: "'ProximaNovaCond', sans-serif;"
+  accent_font_family: "'AlternateGothicRegular', sans-serif;"
 
 seo:
   fb_app_id: 123456789
   keywords: [chiang mai, startup, thailand visa, thailand freelancer visa, thailand work visa, work visa thailand]
-  description: Live and work in Chiang Mai while you develop your new startup
+  description: Draper Startup House connects you to Chiang Mai's startup ecosystem.
 
 # Analytics & embeds
 configuration:

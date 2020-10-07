@@ -22,8 +22,12 @@
   src: url(/assets/fonts/proximanova-black.otf);
   font-weight: bold;
 }
-
+@font-face {
+  font-family: ProximaNovaCond;
+  src: url(/assets/fonts/proximanovacond-regular.otf);
+}
 @font-face {
   font-family: P22UndergroundRegular;
   src: url(/assets/fonts/P22UndergroundRegular.ttf);
+  font-weight: normal;
 }

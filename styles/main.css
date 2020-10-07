@@ -12,10 +12,20 @@
     --secondary-shade                 : {{site.data.settings.colors.secondary_shade_color}};
     --accent-color                    : {{site.data.settings.colors.accent_color}};
     --body-font-family                : {{site.data.settings.fonts.body_font_family}};
-    --heading-font-family             : {{site.data.settings.fonts.design_font_family}};
+    --body-alt-font-family            : {{site.data.settings.fonts.body_alt_font_family}};
+    --heading-font-family             : {{site.data.settings.fonts.header_font_family}};
+    --heading-bold-font-family        : {{site.data.settings.fonts.header_bold_font_family}};
+    --accent-font-family              : {{site.data.settings.fonts.accent_font_family}};
     --heading-default-bottom-margin   : 2rem;
     --transition                      : 0.3s all;
 }
+
+/* body_font_family: "'P22UndergroundRegular', sans-serif;"
+body_alt_font_family: "'ProximaNovaRegular', sans-serif;"
+header_bold_font_family: "'ProximaNovaBlack', sans-serif;"
+header_font_family: "'ProximaNovaCond', sans-serif;"
+accent_font_family: "'AlternateGothicRegular', sans-serif;" */
+
 
 /* Resets */
 
@@ -54,29 +64,39 @@ header {
 
 /* Typography */
 
-h1,
-h2,
-h3 {
-  font-family     : var(--heading-font-family);
-  /* margin-bottom   : var(--heading-default-bottom-margin); */
-}
-
 h1 {
+  font-family     : var(--heading-bold-font-family);
   font-size       : 4rem;
   text-transform  : uppercase;
 }
 
 h2 {
+  font-family     : var(--accent-font-family);
   text-transform: uppercase;
   font-size     : 3rem;
 }
 
 h3 {
-  font-size     : 2rem;
+  font-family   : var(--heading-font-family);
+  font-size     : 1.6rem;
+}
+
+h4 {
+  font-family   : var(--heading-font-family);
+  font-size     : 1.2rem;
+  font-weight   : bold;
+}
+
+h5 {
+  font-family   : var(--body-font-family);
 }
 
 a {
   font-family   : inherit;
+}
+
+a:hover {
+  color: var(--accent-color);
 }
 
 p,
@@ -157,6 +177,9 @@ input {
 }
 .text-accent {
   color: var(--accent-color);
+}
+.text-alt {
+  font-family: var(--body-alt-font-family);
 }
 .emphasis {
   font-size: 1.8rem;
