@@ -156,6 +156,9 @@ input {
 .text-accent {
   color: var(--accent-color);
 }
+.emphasis {
+  font-size: 1.8rem;
+}
 
 /* Utility Classes */
 
@@ -514,6 +517,7 @@ header {
 .btn-wide {
   width: 100%;
   text-align: center;
+  margin-top: 2%;
 }
 
 .btn-light {
