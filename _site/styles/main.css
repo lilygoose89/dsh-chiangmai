@@ -498,6 +498,29 @@ header {
   display        : inline-block;
   text-transform : uppercase;
   font-family    : var(--heading-font-family);
+  color          : var(--accent-color);
+  letter-spacing : 2px;
+  border         : solid 2px var(--accent-color);
+  border-radius  : 30px;
+}
+
+.btn:hover,
+.btn:focus-within {
+  background     : var(--accent-color);
+  border         : solid 2px var(--accent-color);
+  color          : white;
+}
+
+.btn-wide {
+  width: 100%;
+  text-align: center;
+}
+
+.btn-light {
+  padding        : 1rem 2rem;
+  display        : inline-block;
+  text-transform : uppercase;
+  font-family    : var(--heading-font-family);
   color          : var(--primary-color);
   letter-spacing : 2px;
   background     : transparent;
@@ -505,8 +528,8 @@ header {
   border-radius  : 30px;
 }
 
-.btn:hover,
-.btn:focus-within {
+.btn-light:hover,
+.btn-light:focus-within {
   background: white;
   color: rgba(32, 66, 112,0.8);
 }
