@@ -193,6 +193,7 @@ header {
 
 .hero {
   height: 100vh;
+  background-position: bottom;
 }
 
 .logo-container-hero {
@@ -303,7 +304,6 @@ header {
 .bg-image {
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: bottom;
   overflow-y: hidden;
   position: relative;
 }
@@ -699,7 +699,8 @@ header {
 /* Hero & Titles */
 
 .title-hero {
-  height: 60vh;
+  height: 70vh;
+  background-position:center;
 }
 
 .title-pushup {
@@ -1155,6 +1156,12 @@ header {
   #message-form textarea,
   #message-form button {
     width: 95%;
+  }
+  .page-body {
+    margin: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
   }
 }
 
