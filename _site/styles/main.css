@@ -9,6 +9,7 @@
     --secondary-color                 : #555;
     --secondary-shade                 : #565;
     --accent-color                    : #204270;
+    --highlight-color                : #ffcc09;
     --body-font-family                : 'ProximaNovaRegular', sans-serif;;
     --body-alt-font-family            : 'P22UndergroundRegular', sans-serif;;
     --heading-font-family             : 'ProximaNovaCond', sans-serif;;
@@ -68,6 +69,12 @@ h1 {
   text-transform  : uppercase;
 }
 
+.fakeh1 {
+  font-family     : var(--heading-bold-font-family);
+  font-size       : 4rem;
+  text-transform  : uppercase;
+}
+
 h2 {
   font-family     : var(--accent-font-family);
   text-transform: uppercase;
@@ -104,7 +111,7 @@ li,
 span,
 a {
   font-family    : var(--body-font-family);
-  font-size      : 1.2rem;
+  font-size      : 1rem;
   line-height    : 1.5;
 }
 
@@ -149,7 +156,7 @@ textarea {
   border    : none;
   padding   : 1rem;
   width     : 350px;
-  font-size : 1.2rem;
+  font-size : 1rem;
 }
 input::placeholder,
 button::placeholder,
@@ -186,12 +193,24 @@ input {
 /* Utility Classes */
 
 header {
-  padding: 1% 8% ;
+  padding: 1% 10% ;
 }
 
 .hero {
   height: 100vh;
   background-position: bottom;
+}
+
+.body {
+  padding: 6% 10% ;
+}
+
+.home-header {
+  padding: 6% 10% 0 10%;
+}
+
+.home-body {
+    padding: 0 10% 3% 10%;
 }
 
 .logo-container-hero {
@@ -300,10 +319,14 @@ header {
 /* Backgrounds */
 
 .bg-image {
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
   overflow-y: hidden;
   position: relative;
+}
+
+.bg-white {
+  background-color: #fff;
 }
 
 .bg-primary {
@@ -316,6 +339,9 @@ header {
   background-color : var(--secondary-color);
 }
 
+.bg-highlight {
+  background-color : var(--highlight-color);
+}
 .bg-shade {
   color            : var(--primary-shade);
   background-color : var(--secondary-shade);
@@ -323,6 +349,10 @@ header {
 
 .bg-accent {
   background-color : var(--accent-color);
+}
+
+.bg-green {
+  background-color: #65ba8b;
 }
 
 .bg-accent h2,
@@ -520,7 +550,7 @@ header {
 /* Buttons */
 
 .btn {
-  padding        : 1rem 2rem;
+  padding        : 0.8rem 1.6rem;
   display        : inline-block;
   text-transform : uppercase;
   font-family    : var(--heading-font-family);
@@ -544,7 +574,7 @@ header {
 }
 
 .btn-light {
-  padding        : 1rem 2rem;
+  padding        : 0.8rem 1.6rem;
   display        : inline-block;
   text-transform : uppercase;
   font-family    : var(--heading-font-family);
@@ -721,6 +751,9 @@ header {
   -moz-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.35);
   box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.35);
 }
+
+
+
 
 /* CTA section */
 
@@ -1136,7 +1169,7 @@ header {
   li,
   a,
   span {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .footer .btn {
@@ -1252,7 +1285,8 @@ header {
     }
 
   h1,
-  h2 {
+  h2,
+  .fakeh1 {
     font-size: 2.2rem;
   }
   .info-box {
@@ -1300,7 +1334,7 @@ header {
 
 
 @media (min-width: 576px) and (max-width: 1280px) {
-  h1 {
+  h1,.fakeh1 {
     font-size: 3rem;
   }
   h2 {
