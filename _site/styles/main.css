@@ -558,6 +558,7 @@ header {
   letter-spacing : 2px;
   border         : solid 2px var(--accent-color);
   border-radius  : 30px;
+  transition     : 0.1s ease-in-out;
 }
 
 .btn:hover,
@@ -842,101 +843,6 @@ header {
   text-align  : center;
 }
 
-/* Milestones */
-
-.milestones-container {
-  border-radius     : 10px;
-  background-image  : linear-gradient(45deg, #fdca10 15%, #ff611f);
-}
-
-.milestones-container div {
-  position      : relative;
-  border-right  : 2px solid #fff;
-}
-
-.milestones-container div h3 {
-  margin    : 0;
-  font-size : 1.4rem;
-  padding   : 2rem 0;
-  color     : #fff;
-}
-
-.milestones-container div:last-of-type {
-  border-right  : unset;
-}
-
-.milestones-container div span {
-  position  : absolute;
-  width     : 100%;
-  bottom    : -3rem;
-  left      : 50%;
-  transform : translateX(-50%);
-}
-
-.milestones-container div:nth-of-type(3) span {
-  left      : 0;
-  transform : unset;
-  text-align: left;
-}
-
-.milestones-container div:nth-of-type(3) span:last-of-type {
-  right     : -5rem;
-  left      : unset;
-  text-align: right;
-}
-
-.milestones-container div:last-of-type span {
-  left      : unset;
-  right     : 0;
-  text-align: right;
-  transform : unset;
-}
-
-/* Old version */
-.milestone-container {
-  position: relative;
-}
-
-.milestone-item {
-  text-align: center;
-  position: relative;
-}
- .milestone-item h3 {
-    font-size: 1.25rem;
-  }
-
-
-.milestone-container::before, {
-  background-color: var(--primary-highlight);
-}
-
-.application .milestone-container::before {
-  background-color: unset;
-}
-
-.application .milestone-item h3 {
-  margin: 1rem auto;
-}
-
-
-.milestone-outer {
-  -webkit-border-radius: 100%;
-     -moz-border-radius: 100%;
-          border-radius: 100%;
-  margin: auto;
-}
- .milestone-outer span {
-    font-size: 2.5rem;
-    color: #ff611f;
-  }
-
-
-.milestone-outer {
-  height: 100px;
-  width: 100px;
-  border: 5px solid #ff611f;
-}
-
 /* Nav Bar */
 
 /* **Nav container** */
@@ -946,14 +852,16 @@ header {
   top       : 0;
   left      : 0;
   z-index   : 1000;
-  padding   : 1% 15%;
+  padding   : 0.5em 6em;
+  transform: translateY(-100%);
+  transition: var(--transition);
 }
 
 /* Desktop Navigation Styles */
 
-.nav-logo img {
-  width   : 80px;
-  height  : auto
+.nav-logo-img {
+  width   : 8em;
+  height  : auto;
 }
 
 .nav-bar a {
@@ -969,6 +877,7 @@ header {
   margin       : 0;
 }
 .navbar-scroll {
+  transform: translateY(0);
 	background   : var(--accent-color);
 	-webkit-box-shadow : 0px 1px 10px rgba(0, 0, 0, 0.4);
 	   -moz-box-shadow : 0px 1px 10px rgba(0, 0, 0, 0.4);
@@ -1199,6 +1108,12 @@ header {
 /* Gridlex SM to MD */
 
 @media (min-width: 577px) and (max-width: 768px) {
+  .nav-bar {
+    padding: 0.2em 4em;
+  }
+  .nav-logo-img {
+    width   : 6em;
+  }
   .padding-lg {
     padding: 2% 7%;
   }
@@ -1206,11 +1121,7 @@ header {
 
 /* Gridlex MD to LG */
 @media (min-width: 769px) and (max-width: 1024px) {
-
   .nav-bar a {
-    font-size: 1.2rem;
-  }
-  .milestone-item h3 {
     font-size: 1.2rem;
   }
 }
@@ -1221,16 +1132,6 @@ header {
   .padding-lg {
     padding: 2% 10%;
   }
-
-  p,
-  ol,
-  ul,
-  li,
-  a,
-  span {
-    font-size: 1.1rem;
-  }
-
   .highlight-icon,
   .partner-logo {
     width: 120px;
@@ -1241,48 +1142,12 @@ header {
 /* Other combinations */
 
 @media (min-width: 320px) and (max-width: 768px) {
-  .milestones-container div {
-      border-right: none;
-      margin-bottom: 1rem;
-    }
-  .milestones-container div span {
-    position    : relative;
-    transform   : unset;
-    bottom      : unset;
-    left        : unset;
+  .nav-bar {
+    padding: 0.2em 2em;
   }
-  .milestones-container div:nth-of-type(3) span {
-    left        : -2rem;
+  .nav-logo-img {
+    width   : 6em;
   }
-  .milestones-container div:nth-of-type(3) span:last-of-type {
-    right     : -2rem;
-    left      : unset;
-    text-align: right;
-  }
-  .milestone-item {
-    margin: 1rem;
-    margin-right: auto;
-  }
-  .milestone-item h3 {
-    position: absolute;
-    right: -50%;
-    top: 30%;
-    font-size: 1.2rem;
-  }
-    .milestone-inner {
-      height: 60px;
-      width: 60px;
-    }
-     .milestone-inner span {
-        font-size: 0.7rem;
-      }
-
-    .milestone-outer {
-      height: 75px;
-      width: 75px;
-      margin: unset;
-      margin-right: auto;
-    }
 
   h1,
   h2,
@@ -1312,9 +1177,6 @@ header {
   }
   .btn {
     padding: 0.5rem 1.5rem;
-  }
-  .nav-bar {
-    padding: 1%;
   }
   .nav-bar a {
     font-size: 1.2rem;
