@@ -157,6 +157,7 @@ textarea {
   padding   : 1rem;
   width     : 350px;
   font-size : 1rem;
+  font-family: var(--body-font-family);
 }
 input::placeholder,
 button::placeholder,
