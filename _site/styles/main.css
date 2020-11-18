@@ -216,6 +216,7 @@ header {
 
 .logo-container-hero {
   height: 30vh;
+  width: auto;
 }
 
 .padding-lg {
