@@ -385,6 +385,9 @@ header {
   .hide-tablet {
     display: none;
   }
+  .show-tablet {
+    display: block;
+  }
 }
 @media all and (max-width:576px) {
   .hide-mobile {
@@ -1127,6 +1130,9 @@ header {
   .nav-bar a {
     font-size: 1.2rem;
   }
+  .show-tablet {
+    display: none;
+  }
 }
 
 /* Gridlex LG */
@@ -1139,7 +1145,9 @@ header {
   .partner-logo {
     width: 120px;
   }
-
+  .show-tablet {
+    display: none;
+  }
 }
 
 /* Other combinations */
