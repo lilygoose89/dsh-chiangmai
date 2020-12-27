@@ -111,7 +111,7 @@ li,
 span,
 a {
   font-family    : var(--body-font-family);
-  font-size      : 1rem;
+  font-size      : 1.3rem;
   line-height    : 1.5;
 }
 
@@ -147,7 +147,7 @@ h4,
 p,
 ol,
 ul {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 input,
@@ -565,6 +565,11 @@ header {
   border-radius  : 30px;
   transition     : 0.1s ease-in-out;
 }
+.btn-large {
+  font-size: 1.8rem;
+  border-radius: 50px;
+  font-weight: 600;
+}
 
 .btn:hover,
 .btn:focus-within {
@@ -662,6 +667,14 @@ header {
   display: flex;
   transition: var(--transition);
 }
+.join-us-btn {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
 
 /* Image containers */
 
@@ -743,19 +756,39 @@ header {
   position: relative;
   top: -20vh;
 }
+.title-pushup h1 {
+  font-size: 6.5rem;
+  margin-bottom: unset;
+}
 
 .body-pushup {
   position: relative;
-  top: -20vh;
+  margin-top: -20vh;
   margin-bottom: 20vh;
 }
 
 .page-body {
   margin: 0 10%;
   background: white;
-  -webkit-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.35);
-  -moz-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.35);
-  box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.35);
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.35);
+  -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.35);
+  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.35);
+}
+.page-body h2 {
+  color: #204270;
+  text-transform: unset;
+}
+
+.home-body h3 {
+  color: #204270;
+  text-transform: unset;
+  font-size: 2.2rem;
+}
+
+.highlight-heading {
+  font-size: 4rem;
+  text-transform: unset;
+  color: var(--highlight-color);
 }
 
 
