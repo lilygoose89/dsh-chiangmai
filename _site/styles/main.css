@@ -71,7 +71,7 @@ h1 {
 
 .fakeh1 {
   font-family     : var(--heading-bold-font-family);
-  font-size       : 4rem;
+  font-size       : 6rem;
   text-transform  : uppercase;
 }
 
@@ -366,6 +366,7 @@ header {
   background-position: bottom;
   overflow-y: hidden;
   position: relative;
+  background: linear-gradient(rgba(32, 66, 112,0.5), rgba(32, 66, 112,0.5)), url('/assets/images/DraperHouseInterior2-45.JPG');
 }
 
 
@@ -618,6 +619,14 @@ header {
   height     : 100vh;
 }
 
+.contact-form-container {
+  width: 75%;
+  margin: auto;
+}
+.contact-form-container input {
+  width: 100%;
+}
+
 .quote-box {
   position    : absolute;
   display     : inline-block;
@@ -811,17 +820,36 @@ header {
   margin-bottom: 1rem;
 }
 
-#message-form input,
-#message-form button,
-#message-form textarea {
+.sign-up-form input,
+.sign-up-form button,
+.sign-up-form textarea {
     display   : block;
     padding   : 1rem;
-    width     : 60%;
+    width     : 100%;
     font-size : 1.2rem;
-    margin    : auto;
+    /* margin    : auto; */
     margin-bottom: 1rem;
   }
-
+.sign-up-form-data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.sign-up-form-data input {
+  margin: unset;
+  margin-bottom: 1rem;
+}
+.sign-up-form input.input-name {
+  display: inline-block;
+  width: 31%;
+  align-self: flex-start;
+}
+.sign-up-form input.input-email {
+  display: inline-block;
+  width: 67%;
+  
+  align-self: flex-end;
+}
  /* Footer */
 
  .footer {
