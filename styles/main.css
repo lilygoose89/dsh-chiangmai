@@ -65,27 +65,39 @@ header {
 
 /* Typography */
 
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+blockquote,
+cite,
+ul,
+ol,
+li,
+span {
+  color           : var(--secondary-color);
+}
+
+
 h1 {
   font-family     : var(--heading-bold-font-family);
   font-size       : 4rem;
   text-transform  : uppercase;
 }
 
-.fakeh1 {
-  font-family     : var(--heading-bold-font-family);
-  font-size       : 6rem;
-  text-transform  : uppercase;
-}
-
 h2 {
   font-family     : var(--accent-font-family);
-  text-transform: uppercase;
-  font-size     : 3rem;
+  text-transform  : uppercase;
+  font-size       : 3rem;
 }
 
 h3 {
   font-family   : var(--heading-font-family);
-  font-size     : 1.6rem;
+  font-size     : 2.5rem;
+  font-weight   : 600;
+  color         : var(--accent-color);
 }
 
 h4 {
@@ -122,25 +134,12 @@ ul {
   list-style-position : inside;
   font-weight         : 600;
 }
+
 ol li,
 ul li {
   font-weight         : 400;
 }
 
-h1,
-h2,
-h3,
-h4,
-p,
-a,
-blockquote,
-cite,
-ul,
-ol,
-li,
-span {
-  color: var(--secondary-color);
-}
 
 h1,
 h2,
@@ -173,10 +172,10 @@ input {
 }
 
 .text-white {
-  color: white;
+  color: white !important;
 }
 .text-highlight {
-  color: var(--primary-highlight );
+  color: var(--primary-highlight);
 }
 .text-accent {
   color: var(--accent-color);
@@ -208,12 +207,13 @@ header {
 }
 
 .home-body {
-    padding: 0 10% 3% 10%;
+  padding: 0 10% 3% 10%;
 }
 
 .logo-container-hero {
-  height: 30vh;
-  width: auto;
+  width: 600px;
+  height: auto;
+  margin: auto;
 }
 
 .padding-lg {
@@ -726,15 +726,15 @@ header {
   width : 100%;
 }
 
-
 .above-the-fold-container {
   position: relative;
-  padding: 8% 0;
+  padding: 8% 10%;
+  text-align: left;
+}
+.above-the-fold-container.index {
+  text-align: center;
+}
 
-}
-.above-the-fold-content {
-  padding: 0 15%;
-}
 .above-the-fold-content h1,
 .above-the-fold-content h2,
 .above-the-fold-content h3,
@@ -748,11 +748,25 @@ header {
   height: 200px;
   margin: auto;
 }
+.above-the-fold-content h1 {
+  font-size: 3rem;
+  font-family: var(--body-font-family);
+  font-weight: 600;
+  text-transform: initial;
+  letter-spacing: 1px;
+}
+
+.impact-heading {
+  font-family     : var(--heading-bold-font-family);
+  font-size       : 7rem;
+  text-transform  : uppercase;
+}
 
 /* Hero & Titles */
 
 .title-hero {
   height: 70vh;
+  /* min-height: 600px; */
   background-position:center;
 }
 
@@ -849,7 +863,6 @@ header {
 .sign-up-form input.input-email {
   display: inline-block;
   width: 67%;
-  
   align-self: flex-end;
 }
  /* Footer */
@@ -1194,7 +1207,7 @@ header {
 
   h1,
   h2,
-  .fakeh1 {
+  .impact-heading {
     font-size: 2.2rem;
   }
   .info-box {
@@ -1239,7 +1252,7 @@ header {
 
 
 @media (min-width: 576px) and (max-width: 1280px) {
-  h1,.fakeh1 {
+  h1,.impact-heading {
     font-size: 3rem;
   }
   h2 {
