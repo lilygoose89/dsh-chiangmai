@@ -32,7 +32,14 @@ inclusions:
   - title: Visa Advice
     icon_image: /assets/graphics/visa.png    
   - title: Fundraising Help
-    icon_image: /assets/graphics/funding.png    
+    icon_image: /assets/graphics/funding.png
+gallery:
+  - image: /assets/images/DSH-CM-Coworking-3.JPG
+    alt_text: Insert Alt Text here
+  - image: /assets/images/DSH-CM-Coworking-1.JPG
+    alt_text: Insert Alt Text here
+  - image: /assets/images/DraperHouseInterior2-45.JPG
+    alt_text: Insert Alt Text here
 ---
 <section class="center above-the-fold-container bg-image title-hero pad-top-m" style="background: linear-gradient(rgba(32, 66, 112,0.5), rgba(32, 66, 112,0.5)), url({{page.header_image}}); background-position: center;">
   <div class="above-the-fold-content">
@@ -77,4 +84,24 @@ inclusions:
     </div>
     {% endfor %}
   </div>
+</section>
+<section id="copy-content" class="copy-content center padding-lg">
+  <h3 class="editable">
+    More Than Just a Place To Work
+  </h3>
+  <p class="editable">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, aut! Repellendus, eum ipsum. Obcaecati voluptate dicta ut, vitae placeat quod deleniti dolor doloremque molestiae ea, at laboriosam, ipsam animi sint qui adipisci repudiandae? Libero mollitia cupiditate inventore beatae officia itaque voluptates, dolor qui vel dolores illo voluptate labore delectus, illum commodi laboriosam accusantium praesentium blanditiis? Voluptatibus officiis iusto vero! Temporibus quae id doloremque, accusamus quidem autem eum ab exercitationem minima pariatur aliquid, hic culpa ipsa consectetur quas iste eius quos!
+  </p>
+  <h3 class="editable">
+    Join Chiang Mai's Most Dynamic Coworking Community
+  </h3>
+</section>
+<section id="mini-gallery" class="mini-gallery grid-noGutter">
+  {% for item in page.gallery %}
+  <div class="col-4_md-12">
+    <div class="mini-gallery-image">
+      <img src="{{item.image}}" alt="{{item.alt_text}}" class="responsive-img">
+    </div>
+  </div>
+  {% endfor %}
 </section>
