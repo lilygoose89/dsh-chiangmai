@@ -7,12 +7,32 @@ features:
   - title: 3-day trial
     subtitle: Give us a try
     content_html: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut delectus, ad et corporis dignissimos a dolorem voluptatum sequi, sapiente voluptate nesciunt. Deserunt necessitatibus, distinctio itaque voluptate ab nam non suscipit.
+    price: TBH 800
   - title: Flex-pass
     subtitle: Come and Go as You Like
     content_html: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad assumenda saepe ipsum natus consectetur. Corrupti sed fuga voluptatem, qui, sit autem neque excepturi minus accusamus quo sapiente quisquam. Vel id harum iure ea maxime quisquam iusto itaque fugiat dolor.
+    price: Starting at TBH 1600
   - title: Membership
     subtitle: Your All-Access Pass
     content_html: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum fugit cum adipisci esse dolorum consequuntur iste, iusto distinctio veniam rem consectetur ipsa ab hic odit nemo, cumque consequatur unde. Tempora eum eaque vero assumenda impedit nihil natus repudiandae voluptatem? Architecto voluptatum atque eveniet accusamus quod commodi obcaecati libero modi amet?
+    price: Starting at TBH 3600
+inclusions:
+  - title: Hotdesk
+    icon_image: /assets/graphics/desk.png    
+  - title: Superfast WiFi
+    icon_image: /assets/graphics/wifi.png
+  - title: Coffee
+    icon_image: /assets/graphics/coffee.png    
+  - title: Meeting Rooms
+    icon_image: /assets/graphics/concall.png    
+  - title: Curated Events
+    icon_image: /assets/graphics/event.png    
+  - title: Mentorship
+    icon_image: /assets/graphics/mentor.png
+  - title: Visa Advice
+    icon_image: /assets/graphics/visa.png    
+  - title: Fundraising Help
+    icon_image: /assets/graphics/funding.png    
 ---
 <section class="center above-the-fold-container bg-image title-hero pad-top-m" style="background: linear-gradient(rgba(32, 66, 112,0.5), rgba(32, 66, 112,0.5)), url({{page.header_image}}); background-position: center;">
   <div class="above-the-fold-content">
@@ -36,7 +56,25 @@ features:
       <p>
         {{feature.content_html}}
       </p>
+      <h3 class="features-price center">
+        {{feature.price}}
+      </h3>
     </div>
   </div>
   {% endfor %}
+</section>
+<section id="inclusions" class="inclusions">
+  <h2 class="impact-heading center">What's Included</h2>
+  <div class="grid-noGutter padding-md">
+    {% for inclusion in page.inclusions %}
+    <div class="col-3_md-6 center">
+      <div class="inclusions-icon">
+        <img src="{{inclusion.icon_image}}" alt="Coworking with {{inclusion.title}} in Chiang Mai Draper Startup House">
+      </div>
+      <h4 class="inclusions-title">
+        {{inclusion.title}}
+      </h4>
+    </div>
+    {% endfor %}
+  </div>
 </section>
