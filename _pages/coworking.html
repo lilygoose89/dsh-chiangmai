@@ -48,43 +48,8 @@ gallery:
     <p class="text-white editable">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus veritatis qui provident quaerat aliquam perferendis alias! Dolore placeat impedit delectus corrupti quibusdam esse porro sequi consectetur ex, rem doloribus culpa alias ad eaque repellendus minima eum et nam aliquam illum!</p>
   </div>
 </section>
-<section class="features grid-noGutter-spaceBetween">
-  {% for feature in page.features %}
-  <div class="col-4_md-12-top features-container">
-    <div class="features-title-container">
-      <h2 class="features-title">
-        {{feature.title}}
-      </h2>
-      <p class="features-subtitle">
-        {{feature.subtitle}}
-      </p>
-    </div>
-    <div class="features-content">
-      <p>
-        {{feature.content_html}}
-      </p>
-      <h3 class="features-price center">
-        {{feature.price}}
-      </h3>
-    </div>
-  </div>
-  {% endfor %}
-</section>
-<section id="inclusions" class="inclusions">
-  <h2 class="impact-heading center">What's Included</h2>
-  <div class="grid-noGutter padding-md">
-    {% for inclusion in page.inclusions %}
-    <div class="col-3_md-6 center">
-      <div class="inclusions-icon">
-        <img src="{{inclusion.icon_image}}" alt="Coworking with {{inclusion.title}} in Chiang Mai Draper Startup House">
-      </div>
-      <h4 class="inclusions-title">
-        {{inclusion.title}}
-      </h4>
-    </div>
-    {% endfor %}
-  </div>
-</section>
+{% include blocks/features.html %}
+{% include blocks/inclusions.html %}
 <section id="copy-content" class="copy-content center padding-lg">
   <h3 class="editable">
     More Than Just a Place To Work
@@ -96,12 +61,5 @@ gallery:
     Join Chiang Mai's Most Dynamic Coworking Community
   </h3>
 </section>
-<section id="mini-gallery" class="mini-gallery grid-noGutter">
-  {% for item in page.gallery %}
-  <div class="col-4_md-12">
-    <div class="mini-gallery-image">
-      <img src="{{item.image}}" alt="{{item.alt_text}}" class="responsive-img">
-    </div>
-  </div>
-  {% endfor %}
-</section>
+{% include blocks/mini-gallery.html %}
+{% include blocks/contact.html %}

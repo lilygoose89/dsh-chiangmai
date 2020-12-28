@@ -458,6 +458,10 @@ header {
 .pad-left-l {
   padding-left: 20% !important;
 }
+.px-lg {
+  padding: 0 10%;
+}
+
 .margin-0 {
   margin: 0 !important;
 }
@@ -521,6 +525,21 @@ header {
 .margin-left-l {
   margin-left: 20% !important;
 }
+.mx-1 {
+  margin: 0 1rem;
+}
+.mb-1 {
+  margin-bottom: 1rem;
+}
+.mb-2 {
+  margin-bottom: 2rem;
+}
+.mb-3 {
+  margin-bottom: 3rem;
+}
+.mb-4 {
+  margin-bottom: 4rem;
+}
 
 /* POSITION */
 .position-rel {
@@ -562,6 +581,10 @@ header {
   border         : solid 2px var(--accent-color);
   border-radius  : 30px;
   transition     : 0.1s ease-in-out;
+}
+.btn:focus,
+.btn:active {
+  outline: none;
 }
 .btn-large {
   font-size: 1.8rem;
@@ -762,6 +785,14 @@ header {
   text-transform  : uppercase;
 }
 
+.accent-heading {
+  font-family: var(--accent-font-family);
+  font-size: 8rem;
+  font-weight: 400;
+  text-transform: unset;
+  color: var(--highlight-color);
+}
+
 /* Hero & Titles */
 
 .title-hero {
@@ -815,6 +846,7 @@ header {
   background-color: transparent;
   padding: 0 10%;
   transform: translateY(-220px);
+  margin-bottom: -220px !important;
 }
 .features-container {
   margin-bottom: 2rem;
@@ -831,6 +863,10 @@ header {
 }
 
 .features-title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 90%;
   height: 220px;
   margin: auto;
@@ -846,7 +882,8 @@ header {
   padding: 2rem;
   box-shadow: 0px 8px 20px 2px rgba(85, 85, 85, 0.482);
 }
-.features-price {
+.features-price,
+.features-btn {
   position: absolute;
   bottom: 2rem;
   left: 50%;
@@ -870,7 +907,15 @@ header {
   overflow: hidden;
   height: 400px;
   width: 90%;
+  margin: auto;
   margin-bottom: 2rem;
+}
+
+.specialties-container {
+  padding: 3rem;
+  margin-bottom: 2rem;
+  background-color: whitesmoke;
+  box-shadow: 0 8px 10px -5px rgba(51, 51, 51, 0.66);
 }
 
 
@@ -993,7 +1038,7 @@ header {
   top       : 0;
   left      : 0;
   z-index   : 1000;
-  padding   : 0.5em 6em;
+  padding   : 0.5em 10%;
   transform: translateY(-100%);
   transition: var(--transition);
 }
@@ -1012,6 +1057,15 @@ header {
   height: 5px;
   margin-bottom: 7px;
   transform-origin: center;
+}
+.burger-btn:active,
+.burger-btn:focus {
+  outline: none;
+}
+.burger-btn:active span,
+.burger-btn:focus span {
+  background-color: var(--highlight-color);
+  
 }
 .burger-btn span:last-of-type {
   margin-bottom: unset;

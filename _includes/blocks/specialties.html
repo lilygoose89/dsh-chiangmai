@@ -1,0 +1,21 @@
+<section id="specialties" class="specialties center padding-lg">
+  <h2 class="impact-heading">
+    Our Specialties
+  </h2>
+  {% for specialty in page.specialties %}
+  <div class="specialties-container">
+    <h3 class="specialties-title">
+      {{specialty.title}}
+    </h3>
+    <div class="specialties-content">
+      {{specialty.content_html}}
+    </div>
+    <h3 class="specialties-price">
+      {{specialty.price}}
+    </h3>
+    {% if specialty.add_button %}
+    <a href="{{specialty.button_url}}" class="btn">Learn More</a>
+    {% endif %}
+  </div>
+  {% endfor %}
+</section>

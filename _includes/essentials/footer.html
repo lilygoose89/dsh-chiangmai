@@ -2,11 +2,11 @@
   <div class="col-12">
     <h3 class="text-white">Contact Us</h3>
     <p class="text-white">
-      12/8 Nimmanhaemin Soi 13<br />Tambon Suthep Amphur Muang<br />Chiang Mai 50200
+      {{site.data.settings.basics.address_html}}
     </p>
-    <a href="mailto:chiangmai@draperstartuphouse.com" target="blank"><p class="text-white">
-      chiangmai@draperstartuphouse.com
-    </p></a>
+    <a href="mailto:{{site.data.settings.basics.contact_email}}" class="text-white mb-2" target="_blank">
+      {{site.data.settings.basics.contact_email}}
+    </a>
     <div class="grid-center">
       <div class="col-4 grid-spaceAround">
         <a href="{{site.data.settings.social.facebook_url}}" target=blank><i class="fa fa-facebook-square" aria-hidden="true"></i></a>

@@ -1,0 +1,29 @@
+<section class="features grid-noGutter-spaceBetween">
+  {% for feature in page.features %}
+  <div class="col-4_md-12-top features-container">
+    <div class="features-title-container">
+      <h2 class="features-title">
+        {{feature.title}}
+      </h2>
+      {% if feature.subtitle != nil %}
+      <p class="features-subtitle">
+        {{feature.subtitle}}
+      </p>
+      {% endif %}
+    </div>
+    <div class="features-content">
+      <p>
+        {{feature.content_html}}
+      </p>
+      {% if feature.price != nil %}
+      <h3 class="features-price center">
+        {{feature.price}}
+      </h3>
+      {% endif %}
+      {% if feature.add_button %}
+      <a href="{{feature.button_url}}" class="btn features-btn">Get More Info</a>
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</section>

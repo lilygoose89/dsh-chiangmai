@@ -1,0 +1,9 @@
+<section id="mini-gallery" class="mini-gallery grid-noGutter">
+  {% for item in page.gallery %}
+  <div class="col-4_md-12">
+    <div class="mini-gallery-image">
+      <img src="{{item.image}}" alt="{{item.alt_text}}" class="responsive-img">
+    </div>
+  </div>
+  {% endfor %}
+</section>

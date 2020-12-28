@@ -4,9 +4,10 @@ basics:
   site_base_url: 'https://connectinchiangmai.com'
   site_logo_image: ''
   site_thumb_image: ''
-  contact_email: 'example@me.com'
+  contact_email: 'chiangmai@draperstartuphouse.com'
   phone_number: "+555 555 5555"
-  address: Chiang Mai, Thailand
+  address_html: >-
+    12/8 Nimmanhaemin Soi 13<br />Tambon Suthep Amphur Muang<br />Chiang Mai 50200
 social:
   facebook_url: 'https://www.facebook.com/dshchiangmai'
   instagram_url: 'https://instagram.com/dshchiangmai'
