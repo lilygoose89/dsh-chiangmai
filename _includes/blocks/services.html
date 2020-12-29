@@ -1,0 +1,29 @@
+<section class="features grid-noGutter-spaceBetween body-padding">
+  {% for service in page.services %}
+  <div class="col-4_md-12-top features-container">
+    <div class="features-title-container">
+      <h2 class="features-title">
+        {{service.title}}
+      </h2>
+      {% if service.subtitle != nil %}
+      <p class="features-subtitle">
+        {{service.subtitle}}
+      </p>
+      {% endif %}
+    </div>
+    <div class="features-content">
+      <p>
+        {{service.content_html}}
+      </p>
+      {% if service.price != nil %}
+      <h3 class="features-price center">
+        {{service.price}}
+      </h3>
+      {% endif %}
+      {% if service.add_button %}
+      <a href="{{service.button_url}}" class="btn features-btn">{{service.button_content}}</a>
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</section>
