@@ -88,20 +88,20 @@ h1 {
 }
 
 h2 {
-  font-family     : var(--accent-font-family);
+  font-family     : var(--heading-font-family);
   text-transform  : uppercase;
   font-size       : 3rem;
 }
 
 h3 {
-  font-family   : var(--heading-font-family);
+  font-family   : var(--body-font-family);
   font-size     : 2.5rem;
   font-weight   : 600;
   color         : var(--accent-color);
 }
 
 h4 {
-  font-family   : var(--heading-font-family);
+  font-family   : var(--body-font-family);
   font-size     : 1.2rem;
   font-weight   : bold;
 }
@@ -199,7 +199,8 @@ header {
 }
 
 .body {
-  padding: 6% 10% ;
+  padding-top: 6%;
+  padding-bottom: 6%;
 }
 
 .home-header {
@@ -391,10 +392,52 @@ header {
     display: none;
   }
 }
-/* PADDING/MARGINS */
+/*** PADDING/MARGINS ***/
 .container-center {
   margin: 0 auto !important;
 }
+.body-padding {
+  padding-right: 10% !important;
+  padding-left: 10% !important;
+}
+/* Horizontal Padding (x-axis) */
+
+.px-1 {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+.px-2 {
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+.px-3 {
+  padding-left: 3rem !important;
+  padding-right: 3rem !important;
+}
+.px-4 {
+  padding-left: 4rem !important;
+  padding-right: 4rem !important;
+}
+
+/* Vertical padding (y-axis) */
+.py-1 {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+.py-2 {
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+}
+.py-3 {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+.py-4 {
+  padding-top: 4rem !important;
+  padding-bottom: 4rem !important;
+}
+
+
 .pad-0 {
   padding: 0 !important;
 }
@@ -525,6 +568,7 @@ header {
 .margin-left-l {
   margin-left: 20% !important;
 }
+/* Horizontal margins (x-axis) */
 .mx-1 {
   margin: 0 1rem;
 }
@@ -634,45 +678,13 @@ header {
 
 /* Containers */
 
-.illustrated-quote,
-.quote-content {
-  position    : relative;
-}
-
-.large-image {
-  width      : 50%;
-  height     : 100vh;
-}
-
 .contact-form-container {
-  width: 75%;
   margin: auto;
 }
 .contact-form-container input {
   width: 100%;
 }
 
-.quote-box {
-  position    : absolute;
-  display     : inline-block;
-  width       : 50%;
-  right       : 15%;
-  top         : 25%;
-  padding     : 5%;
-}
-
-.quote-name {
-  transform   : translate(15rem, 8rem);
-}
-
-.quote-name h3 {
-  font-size : 4rem;
-  margin    : 0;
-}
-
-.quote-content p {
-  font-size : 2rem;
-}
 
 .highlight-container {
   position    : relative;
@@ -705,54 +717,13 @@ header {
   justify-content: space-between;
 }
 
-/* Image containers */
-
-.responsive-img-container {
-  width    : 100%;
-  height   : 100%;
-  overflow : hidden;
-}
-
-.img-xs,
-.img-sm,
-.img-md,
-.img-lg,
-.img-xl,
-.img-full {
-  height    : inherit;
-  margin    : auto;
-  overflow  : hidden;
-  position  : relative;
-}
-
-.img-xs {
-  width : 180px;
-}
-
-.img-sm {
-  width : 360px;
-}
-
-.img-md {
-  width : 480px;
-}
-
-.img-lg {
-  width : 600px;
-}
-
-.img-xl {
-  width : 800px;
-}
-
-.img-full {
-  width : 100%;
-}
+/* Above-the-fold */
 
 .above-the-fold-container {
   position: relative;
-  padding: 8% 10%;
+  /* padding: 8% 10%; */
   text-align: left;
+  flex-direction: column;
 }
 .above-the-fold-container.index {
   text-align: center;
@@ -786,8 +757,8 @@ header {
 }
 
 .accent-heading {
-  font-family: var(--accent-font-family);
-  font-size: 8rem;
+  font-family: var(--heading-font-family);
+  font-size: 6rem;
   font-weight: 400;
   text-transform: unset;
   color: var(--highlight-color);
@@ -842,14 +813,25 @@ header {
   color: var(--highlight-color);
 }
 
+/* Features section */
+
 .features {
   background-color: transparent;
-  padding: 0 10%;
   transform: translateY(-220px);
   margin-bottom: -220px !important;
 }
 .features-container {
   margin-bottom: 2rem;
+}
+.features-container:first-of-type .features-title-container,
+.features-container:first-of-type .features-content {
+  margin: unset;
+  margin-right: auto;
+}
+.features-container:last-of-type .features-title-container,
+.features-container:last-of-type .features-content {
+  margin: unset;
+  margin-left: auto;
 }
 .features-title {
   font-family: var(--body-font-family);
@@ -877,18 +859,24 @@ header {
 .features-content {
   position: relative;
   width: 90%;
+  height: auto;
   min-height: 500px;
   margin: auto;
   padding: 2rem;
+  padding-bottom: 100px;
   box-shadow: 0px 8px 20px 2px rgba(85, 85, 85, 0.482);
 }
 .features-price,
 .features-btn {
+  text-align: center;
   position: absolute;
+  width: 75%;
   bottom: 2rem;
   left: 50%;
   transform: translateX(-50%);
 }
+
+/* Inclusions section */
 
 .inclusions-icon {
   width: 300px;
@@ -898,6 +886,8 @@ header {
   font-size: 2.5rem;
   color: var(--highlight-color);
 }
+
+/* Mini Gallery section */
 
 .mini-gallery {
   padding: 2rem 10%;
@@ -911,6 +901,7 @@ header {
   margin-bottom: 2rem;
 }
 
+/* Specialties section */
 .specialties-container {
   padding: 3rem;
   margin-bottom: 2rem;
@@ -1364,9 +1355,16 @@ header {
   }
 }
 
+@media (min-width: 1280px) and (max-width: 1800px) {
+  h1,
+  .impact-heading {
+    font-size: 6.5rem;
+  }
+}
 
 @media (min-width: 576px) and (max-width: 1280px) {
-  h1,.impact-heading {
+  h1,
+  .impact-heading {
     font-size: 3rem;
   }
   h2 {

@@ -1,4 +1,4 @@
-<section class="features grid-noGutter-spaceBetween">
+<section class="features grid-noGutter-spaceBetween body-padding">
   {% for feature in page.features %}
   <div class="col-4_md-12-top features-container">
     <div class="features-title-container">
@@ -21,7 +21,7 @@
       </h3>
       {% endif %}
       {% if feature.add_button %}
-      <a href="{{feature.button_url}}" class="btn features-btn">Get More Info</a>
+      <a href="{{feature.button_url}}" class="btn features-btn">{{feature.button_content}}</a>
       {% endif %}
     </div>
   </div>
