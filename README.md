@@ -45,3 +45,7 @@ specialties:
     add_button:
     button_url:
 ```
+
+### "About" page
+
+- **Logos are now clickable**: need to edit the `href` for each logo
