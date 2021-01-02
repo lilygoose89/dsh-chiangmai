@@ -1236,7 +1236,8 @@ header {
   .features-content {
     min-height: unset;
   }
-  .body-padding {
+  .body-padding,
+  .nav-bar {
     padding-right: 6% !important;
     padding-left: 6% !important;
   }
@@ -1273,26 +1274,6 @@ header {
 @media (min-width: 320px) and (max-width: 576px) {
   .padding-lg {
     padding: 2% 4%;
-  }
-  .nav-menu {
-    width: 50%;
-    height: 100vh;
-    padding-top: 50px;
-    padding-bottom: 250px;
-    position: absolute;
-    right: 0;
-    top: 50px;
-    transform: translateX(0px) translateY(0);
-    background-color: var(--accent-color);
-    flex-direction: column;
-    justify-content: space-between;
-    transition: transform 0.2s ease-in-out;
-  }
-  .nav-menu.hide {
-    transform: translateX(300px);
-  }
-  .nav-menu a {
-    margin-right: 0;
   }
 
   p,
@@ -1367,6 +1348,26 @@ header {
     min-height: unset;
     padding-bottom: 3rem;
   }
+  .nav-menu {
+    width: 50%;
+    height: 100vh;
+    padding-top: 50px;
+    padding-bottom: 250px;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    transform: translateX(0px) translateY(0);
+    background-color: var(--accent-color);
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease-in-out;
+  }
+  .nav-menu.hide {
+    transform: translateX(600px);
+  }
+  .nav-menu a {
+    margin-right: 0;
+  }
 }
 /* Gridlex MD to LG */
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -1418,7 +1419,7 @@ header {
   .nav-logo-img {
     width   : 6em;
   }
-
+   
   h1,
   h2,
   .impact-heading {
@@ -1490,7 +1491,8 @@ header {
   .features-title-container {
     height: 180px !important;
   }
-  .body-padding {
+  .body-padding,
+  .nav-bar {
     padding-right: 7% !important;
     padding-left: 7% !important;
   }
@@ -1546,10 +1548,12 @@ header {
   h2 {
     font-size: 2.2rem;
   }
-}
-
-@media (min-width: 576px) and (max-width: 1024px) {
   .highlight-icon {
     width: 100px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1370px) {
+  .nav-bar a {
+    font-size: 1rem;
   }
 }
