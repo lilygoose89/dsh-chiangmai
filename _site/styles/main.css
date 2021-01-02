@@ -1,5 +1,4 @@
 /* Main CSS file */
-/* Check the README file for information on how to edit */
 
 /* CSS variables */
 
@@ -18,13 +17,6 @@
     --heading-default-bottom-margin   : 2rem;
     --transition                      : 0.3s all;
 }
-
-/* body_font_family: "'P22UndergroundRegular', sans-serif;"
-body_alt_font_family: "'ProximaNovaRegular', sans-serif;"
-header_bold_font_family: "'ProximaNovaBlack', sans-serif;"
-header_font_family: "'ProximaNovaCond', sans-serif;"
-accent_font_family: "'AlternateGothicRegular', sans-serif;" */
-
 
 /* Resets */
 
@@ -314,6 +306,14 @@ header {
             flex-direction: row;
 }
 
+.xl-heading {
+  font-size: 10rem !important;
+}
+
+.opacify {
+  opacity: 0.5;
+}
+
 /* Backgrounds */
 
 .bg-image {
@@ -374,22 +374,7 @@ header {
 
 /* helpers ----------------------------------------- */
 
-@media all and (max-width:768px) {
-  .text-center-mobile {
-  text-align: center;
-  }
-  .hide-tablet {
-    display: none;
-  }
-  .show-tablet {
-    display: block;
-  }
-}
-@media all and (max-width:576px) {
-  .hide-mobile {
-    display: none;
-  }
-}
+
 /*** PADDING/MARGINS ***/
 .container-center {
   margin: 0 auto !important;
@@ -683,7 +668,6 @@ header {
   width: 100%;
 }
 
-
 .highlight-container {
   position    : relative;
   height      : auto;
@@ -840,6 +824,7 @@ header {
   font-family: var(--heading-font-family);
   font-weight: bolder;
   font-size: 1.8rem;
+  margin-bottom: 0;
 }
 
 .features-title-container {
@@ -873,11 +858,14 @@ header {
   left: 50%;
   transform: translateX(-50%);
 }
+.features-price {
+  font-size: 2rem;
+}
 
 /* Inclusions section */
 
 .inclusions-icon {
-  width: 300px;
+  width: 250px;
   margin: auto;
 }
 .inclusions-title {
@@ -1219,6 +1207,60 @@ header {
 
 /* Media Queries */
 
+@media all and (max-width:768px) {
+  .text-center-mobile {
+  text-align: center;
+  }
+  .hide-tablet {
+    display: none;
+  }
+  .show-tablet {
+    display: block;
+  }
+}
+@media all and (max-width:576px) {
+  .hide-mobile {
+    display: none;
+  }
+}
+@media (min-width: 300px) and (max-width: 1023px) {
+  .features-container:first-of-type .features-title-container,
+  .features-container:first-of-type .features-content {
+    margin: auto;
+  }
+  .features-content,
+  .features-title-container {
+    width: 100%;
+  }
+  .features {
+    transform: translateY(-160px);
+    margin-bottom: -160px !important;
+  }
+  .features-title-container {
+    height: 160px;
+  }
+  .features-title {
+    margin-bottom: 0;
+    font-size: 3rem;
+  }
+  .features-content {
+    min-height: unset;
+  }
+  .body-padding {
+    padding-right: 6% !important;
+    padding-left: 6% !important;
+  }
+  .inclusions-icon {
+    width: 150px;
+  }
+  .inclusions-title {
+    font-size: 1.8rem;
+  }
+  .accent-heading {
+    font-size: 4rem;
+  }
+}
+
 /* Grilex XS to SM */
 
 @media (min-width: 320px) and (max-width: 576px) {
@@ -1232,7 +1274,7 @@ header {
   li,
   a,
   span {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
   }
 
   .footer .btn {
@@ -1257,6 +1299,9 @@ header {
     -moz-box-shadow: none;
     box-shadow: none;
   }
+  .xl-heading {
+    font-size: 5rem !important;
+  }
 }
 
 /* Gridlex SM to MD */
@@ -1280,6 +1325,16 @@ header {
   }
   .show-tablet {
     display: none;
+  }
+  .impact-heading {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 1.8rem;
+  }
+  
+  .xl-heading {
+    font-size: 5rem !important;
   }
 }
 
@@ -1352,7 +1407,45 @@ header {
     font-size: 0.7rem;
   }
 }
-
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .features-title {
+    font-size: 3rem;
+  }
+  .impact-heading {
+    font-size: 5.5rem;
+  }
+  .xl-heading {
+    font-size: 7rem !important;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  .features-content,
+  .features-title-container {
+    width: 97%;
+  }
+  .body-padding {
+    padding-right: 7% !important;
+    padding-left: 7% !important;
+  }
+  p,
+  ol,
+  ul,
+  li,
+  span,
+  a {
+    font-size: 1.1rem;
+  }
+  .btn {
+    padding: 0.5rem 1rem;
+  }
+  .inclusions-icon {
+    width: 180px;
+  }
+  .inclusions-title {
+    font-size: 2rem;
+  }
+}
 @media (min-width: 1280px) and (max-width: 1800px) {
   h1,
   .impact-heading {
@@ -1360,11 +1453,8 @@ header {
   }
 }
 
-@media (min-width: 576px) and (max-width: 1280px) {
-  h1,
-  .impact-heading {
-    font-size: 3rem;
-  }
+@media (min-width: 576px) and (max-width: 1024px) {
+
   h2 {
     font-size: 2.2rem;
   }
