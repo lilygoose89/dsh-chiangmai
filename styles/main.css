@@ -1279,7 +1279,8 @@ header {
   .nav-menu {
     width: 50%;
     height: 100vh;
-    padding: 200px 0;
+    padding-top: 50px;
+    padding-bottom: 250px;
     position: absolute;
     right: 0;
     top: 50px;
@@ -1332,7 +1333,7 @@ header {
     box-shadow: none;
   }
   .xl-heading {
-    font-size: 5rem !important;
+    font-size: 3.8rem !important;
   }
   .above-the-fold-content h1 {
     font-size: 2.2rem;
@@ -1340,7 +1341,13 @@ header {
   h3 {
     font-size: 2rem;
   }
- 
+  .specialties-container {
+    padding: 3rem 0.5rem;
+  }
+  .features-content {
+    padding: 1rem;
+    padding-bottom: 100px;
+  }
 }
 
 /* Gridlex SM to MD */
