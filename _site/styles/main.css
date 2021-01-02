@@ -854,7 +854,7 @@ header {
   text-align: center;
   position: absolute;
   width: 75%;
-  bottom: 2rem;
+  bottom: 1rem;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -1259,6 +1259,9 @@ header {
   .accent-heading {
     font-size: 4rem;
   }
+  .mini-gallery-image {
+    width: 100%;
+  }
 }
 
 /* Grilex XS to SM */
@@ -1291,8 +1294,12 @@ header {
   #message-form input,
   #message-form textarea,
   #message-form button {
-    width: 95%;
+    width: 100%;
   }
+  .sign-up-form-data {
+    flex-wrap: wrap;
+  }
+
   .page-body {
     margin: 0;
     -webkit-box-shadow: none;
@@ -1301,6 +1308,12 @@ header {
   }
   .xl-heading {
     font-size: 5rem !important;
+  }
+  .above-the-fold-content h1 {
+    font-size: 2.2rem;
+  }
+  h3 {
+    font-size: 2rem;
   }
 }
 
@@ -1366,7 +1379,7 @@ header {
   h1,
   h2,
   .impact-heading {
-    font-size: 2.2rem;
+    font-size: 3.6rem;
   }
   .info-box {
     width: 100%;
@@ -1396,7 +1409,6 @@ header {
     font-size: 1.2rem;
   }
   .above-the-fold-content {
-    padding: 0% 5%;
     margin-bottom: 3rem;
   }
   .footer .footer-nav a {
@@ -1409,7 +1421,11 @@ header {
 }
 @media (min-width: 1024px) and (max-width: 1279px) {
   .features-title {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    margin-bottom: 0;
+  }
+  .features-subtitle {
+    font-size: 1.5rem;
   }
   .impact-heading {
     font-size: 5.5rem;
@@ -1420,9 +1436,16 @@ header {
   h3 {
     font-size: 2rem;
   }
+  .features {
+    transform: translateY(-180px);
+    margin-bottom: -180px !important;
+  }
   .features-content,
   .features-title-container {
     width: 97%;
+  }
+  .features-title-container {
+    height: 180px !important;
   }
   .body-padding {
     padding-right: 7% !important;
@@ -1449,7 +1472,29 @@ header {
 @media (min-width: 1280px) and (max-width: 1800px) {
   h1,
   .impact-heading {
-    font-size: 6.5rem;
+    font-size: 6rem;
+  }
+  .xl-heading {
+    font-size: 7rem !important;
+  }
+  .features {
+    transform: translateY(-180px);
+  }
+  .features-title-container,
+  .features-content {
+    width: 95%;
+  }
+  .features-title-container {
+    height: 180px;
+  }
+  .features-title {
+    font-size: 2.8rem;
+  }
+  .features-subtitle {
+    font-size: 1.5rem;
+  }
+  .above-the-fold-content h1 {
+    font-size: 2.2rem;
   }
 }
 
