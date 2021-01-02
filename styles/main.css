@@ -1235,8 +1235,8 @@ header {
     width: 100%;
   }
   .features {
-    transform: translateY(-160px);
-    margin-bottom: -160px !important;
+    transform: translateY(20px);
+    margin-bottom: 0px !important;
   }
   .features-title-container {
     height: 160px;
