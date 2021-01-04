@@ -73,19 +73,19 @@ span {
 
 h1 {
   font-family     : var(--heading-bold-font-family);
-  font-size       : 4rem;
+  font-size       : 3.8rem;
   text-transform  : uppercase;
 }
 
 h2 {
   font-family     : var(--heading-font-family);
   text-transform  : uppercase;
-  font-size       : 3rem;
+  font-size       : 2.8rem;
 }
 
 h3 {
   font-family   : var(--body-font-family);
-  font-size     : 2.5rem;
+  font-size     : 2.3rem;
   font-weight   : 600;
   color         : var(--accent-color);
 }
@@ -115,7 +115,7 @@ li,
 span,
 a {
   font-family    : var(--body-font-family);
-  font-size      : 1.3rem;
+  font-size      : 1.1rem;
   line-height    : 1.5;
 }
 
@@ -139,6 +139,10 @@ p,
 ol,
 ul {
   margin-bottom: 1.5rem;
+}
+
+address {
+  font-style: unset;
 }
 
 input,
@@ -174,7 +178,7 @@ input {
   font-family: var(--body-alt-font-family);
 }
 .emphasis {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 /* Utility Classes */
@@ -186,6 +190,10 @@ header {
 .hero {
   height: 100vh;
   background-position: bottom;
+}
+
+#about-hero {
+  min-height: 500px;
 }
 
 .body {
@@ -307,7 +315,7 @@ header {
 }
 
 .xl-heading {
-  font-size: 10rem !important;
+  font-size: 8.8rem !important;
 }
 
 .opacify {
@@ -703,7 +711,6 @@ header {
 
 .above-the-fold-container {
   position: relative;
-  /* padding: 8% 10%; */
   text-align: left;
   flex-direction: column;
 }
@@ -725,7 +732,7 @@ header {
   margin: auto;
 }
 .above-the-fold-content h1 {
-  font-size: 3rem;
+  font-size: 2.8rem;
   font-family: var(--body-font-family);
   font-weight: 600;
   text-transform: initial;
@@ -734,13 +741,13 @@ header {
 
 .impact-heading {
   font-family     : var(--heading-bold-font-family);
-  font-size       : 7rem;
+  font-size       : 6.5rem;
   text-transform  : uppercase;
 }
 
 .accent-heading {
   font-family: var(--heading-font-family);
-  font-size: 6rem;
+  font-size: 5rem;
   font-weight: 400;
   text-transform: unset;
   color: var(--highlight-color);
@@ -756,9 +763,9 @@ header {
 
 .title-pushup {
   background-color: #ffcc09;
-  height: 20vh;
+  height: 30vh;
   position: relative;
-  top: -20vh;
+  top: -30vh;
 }
 .title-pushup h1 {
   font-size: 6.5rem;
@@ -767,8 +774,8 @@ header {
 
 .body-pushup {
   position: relative;
-  margin-top: -20vh;
-  margin-bottom: 20vh;
+  margin-top: -30vh;
+  margin-bottom: 30vh;
 }
 
 .page-body {
@@ -1241,8 +1248,8 @@ header {
   }
   .body-padding,
   .nav-bar {
-    padding-right: 6% !important;
-    padding-left: 6% !important;
+    padding-right: 7.5% !important;
+    padding-left: 7.5% !important;
   }
   .inclusions-icon {
     width: 150px;
@@ -1282,7 +1289,7 @@ header {
 
 @media (min-width: 320px) and (max-width: 576px) {
   .padding-lg {
-    padding: 2% 4%;
+    padding: 2% 5.5%;
   }
 
   p,
@@ -1330,10 +1337,10 @@ header {
     font-size: 2rem;
   }
   .specialties-container {
-    padding: 3rem 0.5rem;
+    padding: 3rem 1.5rem;
   }
   .features-content {
-    padding: 1rem;
+    padding: 2rem;
     padding-bottom: 100px;
   }
 }
