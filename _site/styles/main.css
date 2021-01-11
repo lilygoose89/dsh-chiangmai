@@ -3,12 +3,12 @@
 /* CSS variables */
 
 :root {
-    --primary-color                    : #f2f2f2;
+    --white-color                     : #f2f2f2;
     --primary-highlight               : #ffcc09;
     --secondary-color                 : #555;
     --secondary-shade                 : #565;
     --accent-color                    : #204270;
-    --highlight-color                : #ffcc09;
+    --highlight-color                 : #ffcc09;
     --body-font-family                : 'ProximaNovaRegular', sans-serif;;
     --body-alt-font-family            : 'P22UndergroundRegular', sans-serif;;
     --heading-font-family             : 'ProximaNovaCond', sans-serif;;
@@ -336,7 +336,7 @@ header {
 }
 
 .bg-primary {
-  color            : var(--primary-color);
+  color            : var(--white-color);
   background-color : var(--primary-shade);
 }
 
@@ -645,7 +645,7 @@ header {
   display        : inline-block;
   text-transform : uppercase;
   font-family    : var(--heading-font-family);
-  color          : var(--primary-color);
+  color          : var(--white-color);
   letter-spacing : 2px;
   background     : transparent;
   border         : solid 2px white;
@@ -662,7 +662,7 @@ header {
   background     : transparent;
   border         : solid 2px white;
   text-transform   : uppercase;
-  color            : var(--primary-color);
+  color            : var(--white-color);
   font-weight      : 600;
   letter-spacing   : 2px;
 }
@@ -922,7 +922,7 @@ header {
 .cta-container h2,
 .cta-container h3,
 .cta-container span {
-  color: var(--primary-color);
+  color: var(--white-color);
 }
 
 .cta-container p {
@@ -982,7 +982,7 @@ header {
 }
 
 .footer a.btn:hover {
-  background-color  : var(--primary-color);
+  background-color  : var(--white-color);
   color             : var(--secondary-color);
   transition        : 0.2s all;
 }
@@ -994,7 +994,7 @@ header {
 
 .footer a,
 .footer span {
-  color : var(--primary-color);
+  color : var(--white-color);
 }
 
 
@@ -1058,7 +1058,7 @@ header {
   transition: var(--transition);
 }
 .burger-btn {
-  color: var(--primary-color);
+  color: var(--white-color);
   background-color: unset;
   border: none;  
   display: inline;
@@ -1069,7 +1069,7 @@ header {
 }
 .burger-btn span {
   display: block;
-  background-color: var(--primary-color);
+  background-color: var(--white-color);
   border-radius: 3px;
   height: 5px;
   margin-bottom: 7px;
@@ -1121,7 +1121,7 @@ header {
           transition : var(--transition);
 }
 .navbar-scroll.nav-bar .nav-link {
-  color   : var(--primary-color);
+  color   : var(--white-color);
 }
 
 .nav-menu {
@@ -1167,7 +1167,6 @@ header {
   margin        : auto;
   margin-bottom : 2rem;
 }
-
 
 .program-requirements {
   border-radius : 30px;

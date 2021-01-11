@@ -20,8 +20,6 @@ $(document).ready(function(){
       if ($('.nav-bar').hasClass('navbar-scroll')) {
         $('.nav-bar').removeClass('navbar-scroll');
       }
-    }
-    
+    }    
   });
-
 });

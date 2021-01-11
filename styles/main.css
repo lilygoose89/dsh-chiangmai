@@ -5,12 +5,11 @@
 /* CSS variables */
 
 :root {
-    --primary-color                    : {{site.data.settings.colors.primary_color}};
-    --primary-highlight               : {{site.data.settings.colors.highlight-color}};
-    --secondary-color                 : {{site.data.settings.colors.secondary_color}};
-    --secondary-shade                 : {{site.data.settings.colors.secondary_shade_color}};
-    --accent-color                    : {{site.data.settings.colors.accent_color}};
-    --highlight-color                : {{site.data.settings.colors.highlight-color}};
+    --white-color                     : {{site.data.settings.colors.white_color}};
+    --yellow-color               : {{site.data.settings.colors.yellow_color}};
+    --gray-color                 : {{site.data.settings.colors.gray_color}};
+    --lighter-gray-color                 : {{site.data.settings.colors.lighter_gray_color}};
+    --navy-blue-color                    : {{site.data.settings.colors.navy_blue_color}};
     --body-font-family                : {{site.data.settings.fonts.body_font_family}};
     --body-alt-font-family            : {{site.data.settings.fonts.body_alt_font_family}};
     --heading-font-family             : {{site.data.settings.fonts.header_font_family}};
@@ -69,7 +68,7 @@ ul,
 ol,
 li,
 span {
-  color           : var(--secondary-color);
+  color           : var(--gray-color);
 }
 
 
@@ -89,7 +88,7 @@ h3 {
   font-family   : var(--body-font-family);
   font-size     : 2.3rem;
   font-weight   : 600;
-  color         : var(--accent-color);
+  color         : var(--navy-blue-color);
 }
 
 h4 {
@@ -107,7 +106,7 @@ a {
 }
 
 a:hover {
-  color: var(--accent-color);
+  color: var(--navy-blue-color);
 }
 
 p,
@@ -171,10 +170,10 @@ input {
   color: white !important;
 }
 .text-highlight {
-  color: var(--primary-highlight);
+  color: var(--yellow-color);
 }
 .text-accent {
-  color: var(--accent-color);
+  color: var(--navy-blue-color);
 }
 .text-alt {
   font-family: var(--body-alt-font-family);
@@ -338,25 +337,25 @@ header {
 }
 
 .bg-primary {
-  color            : var(--primary-color);
+  color            : var(--white-color);
   background-color : var(--primary-shade);
 }
 
 .bg-secondary {
-  color            : var(--secondary-shade);
-  background-color : var(--secondary-color);
+  color            : var(--lighter-gray-color);
+  background-color : var(--gray-color);
 }
 
 .bg-highlight {
-  background-color : var(--highlight-color);
+  background-color : var(--yellow-color);
 }
 .bg-shade {
   color            : var(--primary-shade);
-  background-color : var(--secondary-shade);
+  background-color : var(--lighter-gray-color);
 }
 
 .bg-accent {
-  background-color : var(--accent-color);
+  background-color : var(--navy-blue-color);
 }
 
 .bg-green {
@@ -613,9 +612,9 @@ header {
   display        : inline-block;
   text-transform : uppercase;
   font-family    : var(--heading-font-family);
-  color          : var(--accent-color);
+  color          : var(--navy-blue-color);
   letter-spacing : 2px;
-  border         : solid 2px var(--accent-color);
+  border         : solid 2px var(--navy-blue-color);
   border-radius  : 30px;
   transition     : 0.1s ease-in-out;
 }
@@ -631,8 +630,8 @@ header {
 
 .btn:hover,
 .btn:focus-within {
-  background     : var(--accent-color);
-  border         : solid 2px var(--accent-color);
+  background     : var(--navy-blue-color);
+  border         : solid 2px var(--navy-blue-color);
   color          : white;
 }
 
@@ -647,7 +646,7 @@ header {
   display        : inline-block;
   text-transform : uppercase;
   font-family    : var(--heading-font-family);
-  color          : var(--primary-color);
+  color          : var(--white-color);
   letter-spacing : 2px;
   background     : transparent;
   border         : solid 2px white;
@@ -664,7 +663,7 @@ header {
   background     : transparent;
   border         : solid 2px white;
   text-transform   : uppercase;
-  color            : var(--primary-color);
+  color            : var(--white-color);
   font-weight      : 600;
   letter-spacing   : 2px;
 }
@@ -725,7 +724,7 @@ header {
 .above-the-fold-content h3,
 .above-the-fold-content p,
 .above-the-fold-content a {
-  color: var(--accent-color);
+  color: var(--navy-blue-color);
 }
 
 .partner-logo {
@@ -752,7 +751,7 @@ header {
   font-size: 5rem;
   font-weight: 400;
   text-transform: unset;
-  color: var(--highlight-color);
+  color: var(--yellow-color);
 }
 
 /* Hero & Titles */
@@ -801,7 +800,7 @@ header {
 .highlight-heading {
   font-size: 4rem;
   text-transform: unset;
-  color: var(--highlight-color);
+  color: var(--yellow-color);
 }
 
 /* Features section */
@@ -845,7 +844,7 @@ header {
   height: 220px;
   margin: auto;
   padding: 2rem;
-  background-color: var(--highlight-color);
+  background-color: var(--yellow-color);
   text-align: center;
 }
 .features-content {
@@ -879,7 +878,7 @@ header {
 }
 .inclusions-title {
   font-size: 2.5rem;
-  color: var(--highlight-color);
+  color: var(--yellow-color);
 }
 
 /* Mini Gallery section */
@@ -914,7 +913,7 @@ header {
 /* CTA section */
 
 .cta-container {
-  background-color: var(--accent-color);
+  background-color: var(--navy-blue-color);
   width: 100%;
   margin: auto;
   border-radius: 30px;
@@ -924,7 +923,7 @@ header {
 .cta-container h2,
 .cta-container h3,
 .cta-container span {
-  color: var(--primary-color);
+  color: var(--white-color);
 }
 
 .cta-container p {
@@ -965,7 +964,7 @@ header {
  /* Footer */
 
  .footer {
-   background-color: var(--secondary-color);
+   background-color: var(--gray-color);
  }
 .footer-social {
   width: 40%;
@@ -984,8 +983,8 @@ header {
 }
 
 .footer a.btn:hover {
-  background-color  : var(--primary-color);
-  color             : var(--secondary-color);
+  background-color  : var(--white-color);
+  color             : var(--gray-color);
   transition        : 0.2s all;
 }
 
@@ -996,14 +995,14 @@ header {
 
 .footer a,
 .footer span {
-  color : var(--primary-color);
+  color : var(--white-color);
 }
 
 
 .footer .fa:focus,
 .footer a:focus {
   outline: none;
-  color: var(--highlight-color);
+  color: var(--yellow-color);
 }
 
 .footer i {
@@ -1017,7 +1016,7 @@ header {
 }
 .footer .fa:hover,
 .footer a:hover {
-  color: var(--highlight-color);
+  color: var(--yellow-color);
   transition: 0.3s all;
 }
 
@@ -1028,7 +1027,7 @@ header {
 }
 .highlights p,
 .highlights h3 {
-  color   : var(--accent-color);
+  color   : var(--navy-blue-color);
 }
 
 .highlight-icon {
@@ -1060,7 +1059,7 @@ header {
   transition: var(--transition);
 }
 .burger-btn {
-  color: var(--primary-color);
+  color: var(--white-color);
   background-color: unset;
   border: none;  
   display: inline;
@@ -1071,7 +1070,7 @@ header {
 }
 .burger-btn span {
   display: block;
-  background-color: var(--primary-color);
+  background-color: var(--white-color);
   border-radius: 3px;
   height: 5px;
   margin-bottom: 7px;
@@ -1084,7 +1083,7 @@ header {
 }
 .burger-btn:active span,
 .burger-btn:focus span {
-  background-color: var(--highlight-color);
+  background-color: var(--yellow-color);
   
 }
 .burger-btn span:last-of-type {
@@ -1108,7 +1107,7 @@ header {
 }
 .nav-bar a:hover,
 .nav-bar a:focus {
-  color: var(--highlight-color);
+  color: var(--yellow-color);
 }
 
 .nav-bar a:last-of-type {
@@ -1116,14 +1115,14 @@ header {
 }
 .navbar-scroll {
   transform    : translateY(0);
-	background   : var(--accent-color);
+	background   : var(--navy-blue-color);
 	-webkit-box-shadow : 0px 1px 10px rgba(0, 0, 0, 0.4);
 	   -moz-box-shadow : 0px 1px 10px rgba(0, 0, 0, 0.4);
 	        box-shadow : 0px 1px 10px rgba(0, 0, 0, 0.4);
           transition : var(--transition);
 }
 .navbar-scroll.nav-bar .nav-link {
-  color   : var(--primary-color);
+  color   : var(--white-color);
 }
 
 .nav-menu {
@@ -1170,14 +1169,13 @@ header {
   margin-bottom : 2rem;
 }
 
-
 .program-requirements {
   border-radius : 30px;
 }
 
 .details-content {
   padding   : 2rem 4rem;
-  border    : 3px solid var(--accent-color);
+  border    : 3px solid var(--navy-blue-color);
 }
 .details-content p,
 .details-content h2,
@@ -1186,7 +1184,7 @@ header {
 .details-content ul,
 .details-content ol,
 .details-content span {
-    color     : var(--secondary-color);
+    color     : var(--gray-color);
   }
 
 .details-content:nth-of-type(even) {
@@ -1375,7 +1373,7 @@ header {
     right: 0;
     top: 50px;
     transform: translateX(0px) translateY(0);
-    background-color: var(--accent-color);
+    background-color: var(--navy-blue-color);
     flex-direction: column;
     justify-content: space-between;
     transition: transform 0.2s ease-in-out;
