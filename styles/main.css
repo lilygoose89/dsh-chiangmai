@@ -374,7 +374,7 @@ header {
   background-position: bottom;
   overflow-y: hidden;
   position: relative; */
-  background: linear-gradient(rgba(32, 66, 112,0.5), rgba(32, 66, 112,0.5)));
+  background: linear-gradient(rgba(32, 66, 112,0.5), rgba(32, 66, 112,0.5));
 }
 
 /* helpers ----------------------------------------- */
