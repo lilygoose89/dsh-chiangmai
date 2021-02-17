@@ -368,7 +368,14 @@ header {
   background: linear-gradient(rgba(32, 66, 112,0.5), rgba(32, 66, 112,0.5)), url('/assets/images/DraperHouseInterior2-45.JPG');
 }
 
-
+bg-contact-page-form{
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  overflow-y: hidden;
+  position: relative;
+  background: linear-gradient(rgba(32, 66, 112,0.5), rgba(32, 66, 112,0.5)));
+}
 
 /* helpers ----------------------------------------- */
 
@@ -979,7 +986,7 @@ header {
 .burger-btn {
   color: var(--white-color);
   background-color: unset;
-  border: none;  
+  border: none;
   display: inline;
   width: 45px;
   padding: unset;
@@ -1002,7 +1009,7 @@ header {
 .burger-btn:active span,
 .burger-btn:focus span {
   background-color: var(--yellow-color);
-  
+
 }
 .burger-btn span:last-of-type {
   margin-bottom: unset;
@@ -1353,7 +1360,7 @@ header {
   .nav-logo-img {
     width   : 6em;
   }
-   
+
   h1,
   h2,
   .impact-heading {
@@ -1410,7 +1417,7 @@ header {
   }
   .xl-heading {
     font-size: 7rem !important;
-    
+
   }
   h3 {
     font-size: 2rem;
