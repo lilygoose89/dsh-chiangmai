@@ -30,7 +30,6 @@ img {
 }
 
 a {
-  text-decoration : none;
   color           : inherit;
 }
 
@@ -531,6 +530,7 @@ header {
 /* Buttons */
 
 .btn {
+  text-decoration : none;
   padding        : 0.8rem 1.6rem;
   display        : inline-block;
   text-transform : uppercase;
@@ -702,6 +702,12 @@ header {
   margin-bottom: 30vh;
 }
 
+.body-pushup-follow {
+  position: relative;
+  margin-top: -15vh;
+  margin-bottom: 5vh;
+}
+
 .page-body {
   margin: 0 10%;
   background: white;
@@ -774,7 +780,7 @@ header {
   position: relative;
   width: 90%;
   height: auto;
-  min-height: 500px;
+  min-height: 400px;
   margin: auto;
   padding: 2rem;
   padding-bottom: 100px;
@@ -894,6 +900,7 @@ header {
   margin: auto;
 }
 .footer a.btn {
+  text-decoration : none;
   border        : 2px solid;
   border-radius : 40px;
   padding       : 1rem 2rem;
@@ -919,6 +926,7 @@ header {
 .footer a,
 .footer span {
   color : var(--white-color);
+  text-decoration : none;
 }
 
 
@@ -1020,6 +1028,7 @@ header {
 }
 
 .nav-bar a {
+  text-decoration : none;
   font-size      : 1.5rem;
   font-family    : var(--body-font-family);
   text-transform : uppercase;
