@@ -4,10 +4,10 @@
 
 :root {
     --white-color                     : #f2f2f2;
-    --yellow-color               : #ffcc09;
-    --gray-color                 : #555;
-    --lighter-gray-color                 : #565;
-    --navy-blue-color                    : #204270;
+    --yellow-color                    : #ffcc09;
+    --gray-color                      : #555;
+    --lighter-gray-color              : #565;
+    --navy-blue-color                 : #204270;
     --body-font-family                : 'ProximaNovaRegular', sans-serif;;
     --body-alt-font-family            : 'P22UndergroundRegular', sans-serif;;
     --heading-font-family             : 'ProximaNovaCond', sans-serif;;
@@ -691,6 +691,7 @@ header {
   position: relative;
   top: -30vh;
 }
+
 .title-pushup h1 {
   font-size: 6.5rem;
   margin-bottom: unset;
@@ -1137,6 +1138,19 @@ header {
   padding       : 1.5rem;
 }
 
+/* landing pages (lp) */
+
+.title-pushup-lp {
+  background-color: #fff;
+  height: 30vh;
+  position: relative;
+  top: -30vh;
+}
+.title-pushup-lp h1 {
+  font-size: 6.5rem;
+  margin-bottom: unset;
+}
+
 /* Media Queries */
 
 @media all and (max-width:768px) {
@@ -1199,6 +1213,9 @@ header {
 
 @media (min-width: 320px) and (max-width: 768px) {
   .title-pushup h1 {
+    font-size: 4.5rem;
+  }
+  .title-pushup-lp h1 {
     font-size: 4.5rem;
   }
    .join-us-btn {

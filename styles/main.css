@@ -6,10 +6,10 @@
 
 :root {
     --white-color                     : {{site.data.settings.colors.white_color}};
-    --yellow-color               : {{site.data.settings.colors.yellow_color}};
-    --gray-color                 : {{site.data.settings.colors.gray_color}};
-    --lighter-gray-color                 : {{site.data.settings.colors.lighter_gray_color}};
-    --navy-blue-color                    : {{site.data.settings.colors.navy_blue_color}};
+    --yellow-color                    : {{site.data.settings.colors.yellow_color}};
+    --gray-color                      : {{site.data.settings.colors.gray_color}};
+    --lighter-gray-color              : {{site.data.settings.colors.lighter_gray_color}};
+    --navy-blue-color                 : {{site.data.settings.colors.navy_blue_color}};
     --body-font-family                : {{site.data.settings.fonts.body_font_family}};
     --body-alt-font-family            : {{site.data.settings.fonts.body_alt_font_family}};
     --heading-font-family             : {{site.data.settings.fonts.header_font_family}};
@@ -693,6 +693,7 @@ header {
   position: relative;
   top: -30vh;
 }
+
 .title-pushup h1 {
   font-size: 6.5rem;
   margin-bottom: unset;
@@ -1139,6 +1140,19 @@ header {
   padding       : 1.5rem;
 }
 
+/* landing pages (lp) */
+
+.title-pushup-lp {
+  background-color: #fff;
+  height: 30vh;
+  position: relative;
+  top: -30vh;
+}
+.title-pushup-lp h1 {
+  font-size: 6.5rem;
+  margin-bottom: unset;
+}
+
 /* Media Queries */
 
 @media all and (max-width:768px) {
@@ -1201,6 +1215,9 @@ header {
 
 @media (min-width: 320px) and (max-width: 768px) {
   .title-pushup h1 {
+    font-size: 4.5rem;
+  }
+  .title-pushup-lp h1 {
     font-size: 4.5rem;
   }
    .join-us-btn {

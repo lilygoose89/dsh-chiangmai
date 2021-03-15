@@ -1,3 +1,50 @@
 ---
 layout: default
 ---
+<section class="center above-the-fold-container bg-image title-hero pad-top-m" style="background: linear-gradient(rgba({{page.rgb1}},0.5), rgba({{page.rgb2}},0.5)), url({{page.header_image}}); background-position: center;">
+  <div class="above-the-fold-content">
+    <div class="grid-middle-center">
+      <div class="col-3_sm-10">
+        <img src="/assets/graphics/dsh-white.png" alt="Draper Startup House Logo"/>
+      </div>
+      <div>
+        <p class="text-white mx-2">presents</p>
+      </div>
+      <div class="col-4_sm-10">
+        <a href="{{page.partner-link}}" target="_blank" rel="noreferrer noopener">
+          <img src="{{page.partner-logo}}" alt="{{page.partner-name}}"/>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page-body">
+  <div class="title-pushup-lp flex-center">
+    <h1 class="center editable" style="color:rgb({{page.rgb2}});">{{page.title}}</h1>
+  </div>
+  <div class="body-pushup pt-2 px-4">
+    <h3>{{page.tagline}}</h3>
+    <p class="editable">
+    {{content}}
+  </div>
+
+  <div class="body-pushup-follow">
+    <p class="show-tablet"></p>
+      <div class="center my-2 pad-all-s editable" style="background:rgb({{page.rgb2}});">
+        <h3 class="text-white">Sign Up for {{page.title}}</h3>
+        <p class="text-white">
+          {{page.final-cta}}
+        </p>
+        <div class="grid-spaceAround">
+          <a href="{{page.signup-link}}" target="_blank" class="btn btn-light" rel="noopener noreferrer">Get Started with a Free Consultation   <i class="fa fa-external-link" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+
+<section class="home-body center ">
+  <p>{{page.partner-name}} is a third-party service provider. Draper Startup House is not an official partner or manager of this company, but we do wholeheartedly recommend them and their service. In the event you sign up, we may receive a small commission. If you have any questions about this or other services/companies we recommend, feel free to <a href="/contact">get in touch</a>.</p>
+</section>
