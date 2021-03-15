@@ -14,11 +14,11 @@ final-cta: Live and work in Thailand stress-free with Getlink Remote. Enjoy the 
 Get a Thailand visa and work permit with Getlinks Remote. Perfect for freelancers, remote workers, and startup entrepreneurs. Live and work legally in Thailand without going through the hassle of registering your own company.
 
 ### How Does it Work?
-Getlinks Remote is a tech recruiting startup with a visa services arm that serves as your Employer of Record (EoR) in Thailand. No need to change your contract or how you handle your invoicing, simply pay a fixed monthly amount through the program and Getlinks will handle all residency requirments, compliance and taxes on your behalf.
+Getlinks Remote is a tech recruiting startup with a visa services arm that serves as your Employer of Record (EoR) in Thailand. No need to change your employment contract or how you handle invoicing with clients, simply pay a fixed monthly amount through the program and Getlinks will handle all residency requirements, compliance and taxes on your behalf.
 
 Qualified applicants can be registered as an 'employee' of Getlinks and eligible to receive a visa and work permit. Each month you just send the required salary to Getlinks who then pays your taxes and social security obligations before depositing the remaining amount (less a monthly fee) into your Thai bank account.
 
-On an annual basis, Getlinks Remote will also submit your income taxes on your behalf. Working for clients in Thailand? Want to work with Thai clients? No problem, Getlinks Remote can also provide an invoicing solution to ensure you're 100% compliant with local taxes and regulations.
+On an annual basis, Getlinks Remote will also submit your income taxes on your behalf. Want to work with Thai clients? No problem, Getlinks Remote can also provide an invoicing solution to ensure you're 100% compliant with local taxes and regulations.
 
 ### Benefits
 * Non-B Business Visa + Work Permit
