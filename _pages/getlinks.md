@@ -36,7 +36,6 @@ On an annual basis, Getlinks Remote will also submit your income taxes on your b
 ### Costs
 #### Upfront Costs:
 * ฿35,000 onboarding fee (approx. US$1140)
-* +฿50,000 _if_ changing from Business, Education or Volunteer Visa
 * Deposit of ฿15,000 held for 1 year (approx. US$490)
 
 #### Recurring Costs:
