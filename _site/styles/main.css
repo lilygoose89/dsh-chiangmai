@@ -638,8 +638,26 @@ header {
   text-align: left;
   flex-direction: column;
 }
+.above-the-fold-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100vw;
+  height: 90vh;
+  z-index: -1;
+}
 .above-the-fold-container.index {
   text-align: center;
+}
+
+.above-the-fold-container-index {
+  position: relative;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .above-the-fold-content h1,
