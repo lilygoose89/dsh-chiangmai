@@ -1,5 +1,5 @@
 url: 'https://connectinchiangmai.com/'
-
+include: ['.htaccess']
 # Enable CloudCannon UI
 cloudcannon:
   data: true
