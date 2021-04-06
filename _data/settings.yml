@@ -1,11 +1,11 @@
-# Basic settings
 basics:
   site_title: Draper Startup House Chiang Mai
   site_base_url: 'https://connectinchiangmai.com'
-  contact_email: 'chiangmai@draperstartuphouse.com'
-  phone_number: "+66925616023"
+  contact_email: chiangmai@draperstartuphouse.com
+  phone_number: 66925616023
   address_html: >-
-    12/8 Nimmanhaemin Soi 13<br />Tambon Suthep Amphur Muang<br />Chiang Mai 50200
+    <p>12/8 Nimmanhaemin Soi 13<br />Tambon Suthep Amphur Muang<br />Chiang Mai
+    50200</p>
 social:
   facebook_url: 'https://www.facebook.com/dshchiangmai'
   instagram_url: 'https://instagram.com/dshchiangmai'
@@ -13,36 +13,38 @@ social:
   twitter_url: 'https://twitter.com/dshchiangmai'
   twitter_handle: '@dshchiangmai'
   youtube_url: 'https://youtube.com'
-  # github_url: 'https://github.com'
   linkedin_url: 'https://www.linkedin.com/company/draperstartuphouse/'
-  # snapchat_url: 'https://snapchat.com'
-  # stackoverflow_url: 'https://stackoverflow.com'
-
-# Global colors. Put HEX values between quotes otherwise it will act as a comment in YAML
 colors:
-  white_color: "#f2f2f2"
-  gray_color: "#555"
-  lighter_gray_color: "#565"
-  yellow_color: "#ffcc09"
-  navy_blue_color: "#204270"
-
-# Typography (can be customized to accomodate more styles like standard font sizes and line height)
+  white_color: '#f2f2f2'
+  gray_color: '#555555'
+  lighter_gray_color: '#556655'
+  yellow_color: '#ffcc09'
+  navy_blue_color: '#204270'
 fonts:
-  fonts_code_block:  '<link href="/styles/fonts.css" rel="stylesheet">' # Place between single quotes
-  body_font_family: "'ProximaNovaRegular', sans-serif;"
-  body_alt_font_family: "'P22UndergroundRegular', sans-serif;"
-  header_bold_font_family: "'ProximaNovaBlack', sans-serif;"
-  header_font_family: "'ProximaNovaCond', sans-serif;"
-  accent_font_family: "'AlternateGothicRegular', sans-serif;"
-
+  fonts_code_block: <link href="/styles/fonts.css" rel="stylesheet">
+  body_font_family: '''ProximaNovaRegular'', sans-serif;'
+  body_alt_font_family: '''P22UndergroundRegular'', sans-serif;'
+  header_bold_font_family: '''ProximaNovaBlack'', sans-serif;'
+  header_font_family: '''ProximaNovaCond'', sans-serif;'
+  accent_font_family: '''AlternateGothicRegular'', sans-serif;'
 seo:
   fb_app_id: 123456789
-  keywords: [chiang mai, chiang mai coworking, startup, chiang mai startup, chiang mai digital nomads, chiang mai hostel, thailand visa, thailand freelancer visa, thailand work visa, work visa thailand]
+  keywords:
+    - chiang mai
+    - chiang mai coworking
+    - startup
+    - chiang mai startup
+    - chiang mai digital nomads
+    - chiang mai hostel
+    - thailand visa
+    - thailand freelancer visa
+    - thailand work visa
+    - work visa thailand
   description: Draper Startup House connects you to Chiang Mai's startup ecosystem.
-
-# Analytics & embeds
 configuration:
   google_tag_manager_code_block:
   google_analytics_code_block:
   form_submission_handler_code_block:
-  flexbox_framework_code_block: '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">'
+  flexbox_framework_code_block: >-
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
